@@ -8,10 +8,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/renault/gigya"
-	"github.com/robotuimyhorobotuiotui/vehicle/renault/keys"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/renault/gigya"
+	"github.com/thommyho/robotui/vehicle/renault/keys"
 )
 
 type API struct {

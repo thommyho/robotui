@@ -4,10 +4,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/robotuimyhorobotuiotui/core"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/spf13/viper"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core"
+	"github.com/thommyho/robotui/util"
 )
 
 const sample = `

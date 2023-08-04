@@ -7,8 +7,8 @@ import (
 	"net/http"
 
 	"github.com/google/go-github/v32/github"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/server"
+	"github.com/thommyho/robotui/util"
 )
 
 var latest *github.RepositoryRelease

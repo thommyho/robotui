@@ -9,11 +9,11 @@ import (
 
 	"github.com/korylprince/ipnetgen"
 	"github.com/olekukonko/tablewriter"
-	"github.com/robotuimyhorobotuiotui/detect/tasks"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/thommyho/robotui/detect"
+	"github.com/thommyho/robotui/detect/tasks"
+	"github.com/thommyho/robotui/util"
 )
 
 // detectCmd represents the vehicle command

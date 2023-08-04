@@ -3,8 +3,8 @@ package bluelink
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/provider"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
 )
 
 const refreshTimeout = 2 * time.Minute

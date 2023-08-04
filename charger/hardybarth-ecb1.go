@@ -25,18 +25,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/charger/echarge"
-	"github.com/robotuimyhorobotuiotui/charger/echarge/ecb1"
-	"github.com/robotuimyhorobotuiotui/meter/obis"
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/echarge"
+	"github.com/thommyho/robotui/charger/echarge/ecb1"
+	"github.com/thommyho/robotui/meter/obis"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/sponsor"
 )
 
 // http://apidoc.ecb1.de
-// https://github.com/robotuimyhorobotuiotui/discussions/778
+// https://github.com/thommyho/robotui/discussions/778
 // https://ee-toolkit.com/electric-car-automated-charging
 
 // HardyBarth charger implementation

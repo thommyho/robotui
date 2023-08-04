@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/charger/keba"
+	"github.com/thommyho/robotui/util"
 )
 
 const Keba TaskType = "keba"

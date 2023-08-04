@@ -9,11 +9,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/niu"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/niu"
 )
 
 // Niu is an api.Vehicle implementation for Niu vehicles

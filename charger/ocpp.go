@@ -12,10 +12,10 @@ import (
 	"github.com/lorenzodonini/ocpp-go/ocpp1.6/core"
 	"github.com/lorenzodonini/ocpp-go/ocpp1.6/smartcharging"
 	"github.com/lorenzodonini/ocpp-go/ocpp1.6/types"
-	"github.com/robotuimyhorobotuiotui/charger/ocpp"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/samber/lo"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/ocpp"
+	"github.com/thommyho/robotui/util"
 )
 
 // OCPP charger implementation

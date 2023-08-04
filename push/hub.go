@@ -85,7 +85,7 @@ func (h *Hub) Run(events <-chan Event, valueChan chan util.Param) {
 			continue
 		}
 
-		// let cache catch up, refs https://github.com/robotuimyhorobotuiotui/pull/445
+		// let cache catch up, refs https://github.com/thommyho/robotui/pull/445
 		flushC := util.Flusher()
 		valueChan <- util.Param{Val: flushC}
 		<-flushC

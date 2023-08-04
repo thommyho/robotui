@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/shurcooL/graphql"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 	"golang.org/x/exp/slices"
 	"golang.org/x/oauth2"
 )

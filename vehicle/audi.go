@@ -4,14 +4,14 @@ import (
 	"context"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/audi/etron"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/idkproxy"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/service"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/vwidentity"
-	"github.com/robotuimyhorobotuiotui/vehicle/vw/id"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/audi/etron"
+	"github.com/thommyho/robotui/vehicle/vag/idkproxy"
+	"github.com/thommyho/robotui/vehicle/vag/service"
+	"github.com/thommyho/robotui/vehicle/vag/vwidentity"
+	"github.com/thommyho/robotui/vehicle/vw/id"
 )
 
 // https://github.com/TA2k/ioBroker.vw-connect

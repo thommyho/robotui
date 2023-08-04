@@ -3,9 +3,9 @@ package core
 import (
 	"errors"
 
-	"github.com/robotuimyhorobotuiotui/core/site"
-	"github.com/robotuimyhorobotuiotui/server/db/settings"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/site"
+	"github.com/thommyho/robotui/server/db/settings"
 )
 
 var _ site.API = (*Site)(nil)

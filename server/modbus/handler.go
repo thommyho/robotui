@@ -7,8 +7,8 @@ import (
 
 	"github.com/andig/mbserver"
 	gridx "github.com/grid-x/modbus"
-	"github.com/robotuimyhorobotuiotui/util/modbus"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/modbus"
 )
 
 type handler struct {

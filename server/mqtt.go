@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/core/loadpoint"
-	"github.com/robotuimyhorobotuiotui/core/site"
-	"github.com/robotuimyhorobotuiotui/provider/mqtt"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/loadpoint"
+	"github.com/thommyho/robotui/core/site"
+	"github.com/thommyho/robotui/provider/mqtt"
+	"github.com/thommyho/robotui/util"
 )
 
 var deprecatedTopics = []string{

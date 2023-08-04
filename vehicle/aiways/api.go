@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 )
 
 // https://github.com/snaptec/openWB/blob/master/modules/soc_aiways/aiways_get_soc.py

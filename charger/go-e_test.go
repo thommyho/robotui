@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util/sponsor"
 )
 
 type handler struct {

@@ -15,17 +15,17 @@ import (
 	"github.com/dustin/go-humanize"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
-	"github.com/robotuimyhorobotuiotui/charger"
-	"github.com/robotuimyhorobotuiotui/meter"
-	"github.com/robotuimyhorobotuiotui/provider/mqtt"
-	"github.com/robotuimyhorobotuiotui/push"
-	"github.com/robotuimyhorobotuiotui/server"
-	"github.com/robotuimyhorobotuiotui/server/oauth2redirect"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/modbus"
-	"github.com/robotuimyhorobotuiotui/vehicle"
-	"github.com/robotuimyhorobotuiotui/vehicle/wrapper"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger"
+	"github.com/thommyho/robotui/meter"
+	"github.com/thommyho/robotui/provider/mqtt"
+	"github.com/thommyho/robotui/push"
+	"github.com/thommyho/robotui/server"
+	"github.com/thommyho/robotui/server/oauth2redirect"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/modbus"
+	"github.com/thommyho/robotui/vehicle"
+	"github.com/thommyho/robotui/vehicle/wrapper"
 	"golang.org/x/exp/maps"
 	"golang.org/x/sync/errgroup"
 )
@@ -157,7 +157,7 @@ func (cp *ConfigProvider) TrackVisitors() {
 // Meter provides meters by name
 func (cp *ConfigProvider) Meter(name string) (api.Meter, error) {
 	if meter, ok := cp.meters[name]; ok {
-		// track duplicate usage https://github.com/robotuimyhorobotuiotui/issues/1744
+		// track duplicate usage https://github.com/thommyho/robotui/issues/1744
 		if cp.visited != nil {
 			if _, ok := cp.visited[name]; ok {
 				log.FATAL.Fatalf("duplicate meter usage: %s", name)

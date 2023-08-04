@@ -1,8 +1,8 @@
 package site
 
 import (
-	"github.com/robotuimyhorobotuiotui/core/loadpoint"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/loadpoint"
 )
 
 // API is the external site API

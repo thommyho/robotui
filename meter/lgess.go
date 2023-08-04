@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/meter/lgpcs"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/lgpcs"
+	"github.com/thommyho/robotui/util"
 )
 
 /*

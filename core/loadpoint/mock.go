@@ -8,7 +8,7 @@ import (
 	reflect "reflect"
 	time "time"
 
-	api "github.com/robotuimyhorobotuiotui/api"
+	api "github.com/thommyho/robotui/api"
 	gomock "github.com/golang/mock/gomock"
 )
 

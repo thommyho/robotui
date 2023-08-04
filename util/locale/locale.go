@@ -7,8 +7,8 @@ import (
 	"github.com/BurntSushi/toml"
 	"github.com/cloudfoundry/jibber_jabber"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
-	"github.com/robotuimyhorobotuiotui/util/locale/internal"
 	"github.com/thommyho/robotui/server/assets"
+	"github.com/thommyho/robotui/util/locale/internal"
 	"golang.org/x/text/language"
 )
 

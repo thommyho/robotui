@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/renault/kamereon"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/renault/kamereon"
 	"golang.org/x/exp/slices"
 )
 

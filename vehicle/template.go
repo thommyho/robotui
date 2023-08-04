@@ -1,8 +1,8 @@
 package vehicle
 
 import (
-	"github.com/robotuimyhorobotuiotui/util/templates"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util/templates"
 )
 
 func init() {

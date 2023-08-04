@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/charger/daheimladen"
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/daheimladen"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 	"golang.org/x/oauth2"
 )
 

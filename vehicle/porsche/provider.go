@@ -4,9 +4,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
 )
 
 // Provider is an api.Vehicle implementation for Porsche PHEV cars

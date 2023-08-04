@@ -2,9 +2,9 @@ package provider
 
 import (
 	"github.com/robertkrimen/otto"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/spf13/cast"
 	"github.com/thommyho/robotui/provider/javascript"
+	"github.com/thommyho/robotui/util"
 )
 
 // Javascript implements Javascript request provider

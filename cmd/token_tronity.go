@@ -9,12 +9,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/vehicle"
-	"github.com/robotuimyhorobotuiotui/vehicle/tronity"
 	"github.com/samber/lo"
 	"github.com/skratchdot/open-golang/open"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle"
+	"github.com/thommyho/robotui/vehicle/tronity"
 	"golang.org/x/oauth2"
 )
 

@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/charger/keba"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/keba"
+	"github.com/thommyho/robotui/util"
 )
 
 // https://www.keba.com/file/downloads/e-mobility/KeContact_P20_P30_UDP_ProgrGuide_en.pdf

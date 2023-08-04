@@ -3,9 +3,9 @@ package vehicle
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/vehicle/bmw"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle/bmw"
 )
 
 // BMW is an api.Vehicle implementation for BMW and Mini cars

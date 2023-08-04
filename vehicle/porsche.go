@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/vehicle/porsche"
 	"github.com/samber/lo"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle/porsche"
 )
 
 // Porsche is an api.Vehicle implementation for Porsche cars

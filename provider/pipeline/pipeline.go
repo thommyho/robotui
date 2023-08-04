@@ -10,9 +10,9 @@ import (
 	xj "github.com/basgys/goxml2json"
 	"github.com/itchyny/gojq"
 	"github.com/robertkrimen/otto"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/jq"
 	"github.com/thommyho/robotui/provider/javascript"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/jq"
 	"github.com/volkszaehler/mbmd/meters/rs485"
 )
 

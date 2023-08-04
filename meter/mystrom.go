@@ -1,9 +1,9 @@
 package meter
 
 import (
-	"github.com/robotuimyhorobotuiotui/meter/mystrom"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/mystrom"
+	"github.com/thommyho/robotui/util"
 )
 
 // myStrom switch:

@@ -2,9 +2,9 @@ package core
 
 import (
 	"github.com/avast/retry-go/v4"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/samber/lo"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/exp/constraints"
 )
 
@@ -32,7 +32,7 @@ func powerToCurrent(power float64, phases int) float64 {
 func sitePower(log *util.Logger, maxGrid, grid, battery, residual float64) float64 {
 	// For hybrid inverters, battery can be charged from DC power in excess of
 	// inverter AC rating. This battery charge must not be counted as available for AC consumption.
-	// https://github.com/robotuimyhorobotuiotui/issues/2734, https://github.robotuithomrobotui/robotui/issues/2986
+	// https://github.com/thommyho/robotui/issues/2734, https://github.robotuithomrobotui/robotui/issues/2986
 	if maxGrid > 0 && grid > maxGrid && battery < 0 {
 		log.TRACE.Printf("ignoring excess DC charging due to grid consumption: %.0fW > %.0fW", grid, maxGrid)
 		battery = 0

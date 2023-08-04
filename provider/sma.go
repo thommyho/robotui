@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/provider/sma"
+	"github.com/thommyho/robotui/util"
 	"gitlab.com/bboehmke/sunny"
 )
 

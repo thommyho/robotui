@@ -5,11 +5,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/charger/openwb/pro"
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/openwb/pro"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 )
 
 func init() {

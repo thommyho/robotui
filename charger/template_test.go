@@ -3,8 +3,8 @@ package charger
 import (
 	"testing"
 
-	"github.com/robotuimyhorobotuiotui/util/test"
 	"github.com/thommyho/robotui/util/templates"
+	"github.com/thommyho/robotui/util/test"
 )
 
 var acceptable = []string{
@@ -22,7 +22,7 @@ var acceptable = []string{
 	"recv timeout",
 	"(Client.Timeout exceeded while awaiting headers)",
 	"can only have either uri or device", // modbus
-	"sponsorship required, see https://github.com/robotuimyhorobotuiotui#sponsorship",
+	"sponsorship required, see https://github.com/thommyho/robotui#sponsorship",
 	"eebus not configured",
 	"context deadline exceeded",
 	"missing credentials",

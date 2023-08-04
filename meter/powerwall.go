@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/foogod/go-powerwall"
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 )
 
 // PowerWall is the tesla powerwall meter

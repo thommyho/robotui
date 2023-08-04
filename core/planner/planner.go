@@ -5,8 +5,8 @@ import (
 
 	"github.com/benbjohnson/clock"
 	"github.com/jinzhu/copier"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/exp/slices"
 )
 

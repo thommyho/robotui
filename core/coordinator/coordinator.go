@@ -1,9 +1,9 @@
 package coordinator
 
 import (
-	"github.com/robotuimyhorobotuiotui/core/loadpoint"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/loadpoint"
+	"github.com/thommyho/robotui/util"
 )
 
 // Coordinator coordinates vehicle access between loadpoints

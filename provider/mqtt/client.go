@@ -8,9 +8,9 @@ import (
 	"sync"
 
 	paho "github.com/eclipse/paho.mqtt.golang"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 )
 
 // Instance is the paho Mqtt client singleton

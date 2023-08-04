@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/spf13/viper"
 	"github.com/thommyho/robotui/cmd/shutdown"
+	"github.com/thommyho/robotui/util"
 )
 
 // parseLogLevels parses --log area:level[,...] switch into levels per log area

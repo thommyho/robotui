@@ -10,8 +10,8 @@ import (
 	"time"
 
 	gridx "github.com/grid-x/modbus"
-	"github.com/robotuimyhorobotuiotui/util/modbus"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/modbus"
 	"github.com/volkszaehler/mbmd/meters"
 	"github.com/volkszaehler/mbmd/meters/sunspec"
 )

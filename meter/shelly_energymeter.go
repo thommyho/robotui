@@ -1,9 +1,9 @@
 package meter
 
 import (
-	"github.com/robotuimyhorobotuiotui/meter/shelly"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/shelly"
+	"github.com/thommyho/robotui/util"
 )
 
 // Shelly meter implementation

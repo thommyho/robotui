@@ -10,10 +10,10 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/robotuimyhorobotuiotui/core/db"
-	dbserver "github.com/robotuimyhorobotuiotui/server/db"
-	"github.com/robotuimyhorobotuiotui/util/locale"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/db"
+	dbserver "github.com/thommyho/robotui/server/db"
+	"github.com/thommyho/robotui/util/locale"
 	"golang.org/x/text/language"
 )
 

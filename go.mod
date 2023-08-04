@@ -210,4 +210,4 @@ require (
 
 replace github.com/foogod/go-powerwall => github.com/andig/go-powerwall v0.2.1-0.20230525091927-777196024a18
 
-replace github.com/grid-x/modbus => github.com/robotui-io/modbus v0.0.0-20230705160100-23e1df2c01c3
+replace github.com/grid-x/modbus => github.com/evcc-io/modbus v0.0.0-20230705160100-23e1df2c01c3

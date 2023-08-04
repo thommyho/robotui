@@ -6,10 +6,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/thommyho/robotui/cmd/configure"
+	"github.com/thommyho/robotui/util"
 )
 
 // configureCmd represents the configure command

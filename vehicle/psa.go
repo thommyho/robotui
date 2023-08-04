@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/vehicle/psa"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle/psa"
 )
 
 // https://github.com/TA2k/ioBroker.psa

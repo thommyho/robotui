@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/vehicle/mb"
-	"github.com/robotuimyhorobotuiotui/vehicle/smart"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle/mb"
+	"github.com/thommyho/robotui/vehicle/smart"
 )
 
 // Smart is an api.Vehicle implementation for Smart cars

@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/itchyny/gojq"
-	"github.com/robotuimyhorobotuiotui/util/jq"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/jq"
 )
 
 const Http TaskType = "http"

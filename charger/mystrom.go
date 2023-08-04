@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/meter/mystrom"
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/mystrom"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
 )
 
 // myStrom switch:

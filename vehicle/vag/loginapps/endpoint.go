@@ -4,11 +4,11 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/robotuimyhorobotuiotui/util/oauth"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/urlvalues"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/cariad"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/oauth"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/urlvalues"
+	"github.com/thommyho/robotui/vehicle/vag/cariad"
 	"golang.org/x/oauth2"
 )
 

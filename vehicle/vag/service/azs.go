@@ -3,9 +3,9 @@ package service
 import (
 	"net/url"
 
-	"github.com/robotuimyhorobotuiotui/vehicle/vag"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/aazsproxy"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle/vag"
+	"github.com/thommyho/robotui/vehicle/vag/aazsproxy"
 )
 
 // AAZSTokenSource creates a refreshing token source for use with the AAZS api.

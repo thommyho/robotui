@@ -13,9 +13,9 @@ import (
 
 	"github.com/itchyny/gojq"
 	"github.com/kballard/go-shellquote"
-	"github.com/robotuimyhorobotuiotui/util/jq"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/jq"
+	"github.com/thommyho/robotui/util/request"
 )
 
 // Script implements shell script-based providers and setters

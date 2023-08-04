@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/core/site"
-	"github.com/robotuimyhorobotuiotui/hems/ocpp/profile"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/machine"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/site"
+	"github.com/thommyho/robotui/hems/ocpp/profile"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/machine"
 
 	ocpp16 "github.com/lorenzodonini/ocpp-go/ocpp1.6"
 	ocppcore "github.com/lorenzodonini/ocpp-go/ocpp1.6/core"

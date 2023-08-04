@@ -11,11 +11,11 @@ import (
 	"time"
 
 	"github.com/coreos/go-oidc/v3/oidc"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/urlvalues"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/cariad"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/urlvalues"
+	"github.com/thommyho/robotui/vehicle/vag"
+	"github.com/thommyho/robotui/vehicle/vag/cariad"
 )
 
 const WellKnown = cariad.BaseURL + "/login/v1/idk/openid-configuration"

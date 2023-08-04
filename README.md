@@ -3,9 +3,9 @@
 [![Build Status](https://github.com/thommyho/robotui/workflows/Build/badge.svg)](https://github.com/thommyho/robotui/actions?query=workflow%3ABuild)
 [![Code Quality](https://goreportcard.com/badge/github.com/thommyho/robotui)](https://goreportcard.com/report/github.com/thommyho/robotui)
 [![Translation](https://hosted.weblate.org/widgets/robotui/-/robotui/svg-badge.svg)](https://hosted.weblate.org/engage/robotui/)
-[![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20VS%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/robotui-io/robotui)
+[![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20VS%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/evcc-io/robotui)
 [![OSS hosting by cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith)](https://cloudsmith.io/~robotui/packages/)
-[![Latest Version](https://img.shields.io/github/release/robotui-io/robotui.svg)](https://github.com/thommyho/robotui/releases)
+[![Latest Version](https://img.shields.io/github/release/evcc-io/robotui.svg)](https://github.com/thommyho/robotui/releases)
 
 robotui is an extensible EV Charge Controller with PV integration implemented in [Go][1]. Featured in [PV magazine](https://www.pv-magazine.de/2021/01/15/selbst-ist-der-groeoenlandhof-wallbox-ladesteuerung-selbst-gebaut/).
 
@@ -110,7 +110,7 @@ Maintaining robotui consumes time and effort. With the vast amount of different 
 
 While robotui is open source, we would also like to encourage vendors to provide open source hardware devices, public documentation and support open source projects like ours that provide additional value to otherwise closed hardware. Where this is not the case, robotui requires "sponsor token" to finance ongoing development and support of robotui.
 
-The personal sponsor token requires a [Github Sponsorship](https://github.com/sponsors/robotui-io) and can be requested at [sponsor.robotui.io](https://sponsor.robotui.io/).
+The personal sponsor token requires a [Github Sponsorship](https://github.com/sponsors/evcc-io) and can be requested at [sponsor.robotui.io](https://sponsor.robotui.io/).
 
 [1]: https://golang.org
 [2]: https://nodejs.org/

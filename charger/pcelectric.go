@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/robotuimyhorobotuiotui/charger/pcelectric"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/pcelectric"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/sponsor"
 )
 
 // PCElectric charger implementation

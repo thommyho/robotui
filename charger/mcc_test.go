@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 )
 
 // HTTP testing appproach from http://hassansin.github.io/Unit-Testing-http-client-in-Go

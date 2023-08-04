@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"time"
 
-	goe "github.com/robotuimyhorobotuiotui/charger/go-e"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/api"
+	goe "github.com/thommyho/robotui/charger/go-e"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/sponsor"
 )
 
 // https://go-e.co/app/api.pdf

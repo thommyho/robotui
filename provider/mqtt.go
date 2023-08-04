@@ -3,9 +3,9 @@ package provider
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/provider/pipeline"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/provider/mqtt"
+	"github.com/thommyho/robotui/provider/pipeline"
+	"github.com/thommyho/robotui/util"
 )
 
 // Mqtt provider

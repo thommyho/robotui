@@ -15,12 +15,12 @@ import (
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
 	"github.com/koron/go-ssdp"
-	"github.com/robotuimyhorobotuiotui/core/loadpoint"
-	"github.com/robotuimyhorobotuiotui/core/site"
-	"github.com/robotuimyhorobotuiotui/server"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/machine"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/loadpoint"
+	"github.com/thommyho/robotui/core/site"
+	"github.com/thommyho/robotui/server"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/machine"
 )
 
 const (
@@ -235,7 +235,7 @@ func (s *SEMP) gatewayDescription(w http.ResponseWriter, r *http.Request) {
 		Device: Device{
 			DeviceType:      sempGateway,
 			FriendlyName:    "robotui",
-			Manufacturer:    "github.com/robotuimyhorobotuiotui",
+			Manufacturer:    "github.com/thommyho/robotui",
 			ModelName:       serverName,
 			PresentationURL: s.hostURI,
 			UDN:             uid,
@@ -380,7 +380,7 @@ func (s *SEMP) deviceInfo(id int, lp loadpoint.API) DeviceInfo {
 			DeviceName:   lp.Title(),
 			DeviceType:   sempCharger,
 			DeviceSerial: s.serialNumber(id),
-			DeviceVendor: "github.com/robotuimyhorobotuiotui",
+			DeviceVendor: "github.com/thommyho/robotui",
 		},
 		Capabilities: Capabilities{
 			CurrentPowerMethod:   method,

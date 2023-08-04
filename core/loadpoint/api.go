@@ -6,7 +6,7 @@ import (
 	"github.com/thommyho/robotui/api"
 )
 
-//go:generate mockgen -package loadpoint -destination mock.go -mock_names API=MockAPI github.com/robotuimyhorobotuiotui/core/loadpoint API
+//go:generate mockgen -package loadpoint -destination mock.go -mock_names API=MockAPI github.com/thommyho/robotui/core/loadpoint API
 
 // Controller gives access to loadpoint
 type Controller interface {

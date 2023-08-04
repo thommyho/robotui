@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/provider"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
 )
 
 // Provider is an api.Vehicle implementation for VW ID cars

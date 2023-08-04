@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/vehicle/mercedes"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle/mercedes"
 )
 
 // Mercedes is an api.Vehicle implementation for Mercedes cars

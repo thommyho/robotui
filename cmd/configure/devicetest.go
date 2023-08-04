@@ -4,11 +4,11 @@ import (
 	"errors"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/charger"
-	"github.com/robotuimyhorobotuiotui/meter"
-	"github.com/robotuimyhorobotuiotui/util/templates"
-	"github.com/robotuimyhorobotuiotui/vehicle"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger"
+	"github.com/thommyho/robotui/meter"
+	"github.com/thommyho/robotui/util/templates"
+	"github.com/thommyho/robotui/vehicle"
 	"gopkg.in/yaml.v3"
 )
 

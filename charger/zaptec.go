@@ -26,13 +26,13 @@ import (
 	"time"
 
 	"github.com/coreos/go-oidc/v3/oidc"
-	"github.com/robotuimyhorobotuiotui/charger/zaptec"
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/samber/lo"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/zaptec"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/sponsor"
 	"golang.org/x/oauth2"
 )
 

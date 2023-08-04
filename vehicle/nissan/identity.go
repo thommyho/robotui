@@ -7,9 +7,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 	"golang.org/x/oauth2"
 )
 

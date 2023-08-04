@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/charger/evse"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/evse"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 )
 
 // EVSEWifi charger implementation

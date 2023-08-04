@@ -3,13 +3,13 @@ package vehicle
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/renault"
-	"github.com/robotuimyhorobotuiotui/vehicle/renault/gigya"
-	"github.com/robotuimyhorobotuiotui/vehicle/renault/kamereon"
-	"github.com/robotuimyhorobotuiotui/vehicle/renault/keys"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/renault"
+	"github.com/thommyho/robotui/vehicle/renault/gigya"
+	"github.com/thommyho/robotui/vehicle/renault/kamereon"
+	"github.com/thommyho/robotui/vehicle/renault/keys"
 )
 
 // Credits to

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/modbus"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/modbus"
 )
 
 // Obo charger implementation

@@ -3,8 +3,8 @@ package provider
 import (
 	"strconv"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/provider/pipeline"
+	"github.com/thommyho/robotui/util"
 )
 
 type constProvider struct {

@@ -7,8 +7,8 @@ import (
 
 	"github.com/fatih/structs"
 	"github.com/jeremywohl/flatten"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/detect/tasks"
+	"github.com/thommyho/robotui/util"
 )
 
 func workers(log *util.Logger, num int, tasks <-chan string, hits chan<- []tasks.Result) *sync.WaitGroup {

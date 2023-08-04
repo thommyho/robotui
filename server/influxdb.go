@@ -12,8 +12,8 @@ import (
 	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
 	"github.com/influxdata/influxdb-client-go/v2/api/write"
 	influxlog "github.com/influxdata/influxdb-client-go/v2/log"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/core/site"
+	"github.com/thommyho/robotui/util"
 )
 
 // InfluxConfig is the influx db configuration

@@ -12,8 +12,8 @@ import (
 
 	"github.com/google/go-github/v32/github"
 	"github.com/hashicorp/go-version"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 	"golang.org/x/oauth2"
 )
 

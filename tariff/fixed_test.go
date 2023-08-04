@@ -5,9 +5,9 @@ import (
 
 	"github.com/benbjohnson/clock"
 	"github.com/golang-module/carbon/v2"
-	"github.com/robotuimyhorobotuiotui/tariff/fixed"
 	"github.com/stretchr/testify/assert"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/tariff/fixed"
 )
 
 func TestFixed(t *testing.T) {

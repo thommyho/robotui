@@ -17,9 +17,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/meter/bosch"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/bosch"
+	"github.com/thommyho/robotui/util"
 )
 
 // Example config:

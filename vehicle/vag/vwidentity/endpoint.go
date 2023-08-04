@@ -10,11 +10,11 @@ import (
 
 	"github.com/coreos/go-oidc/v3/oidc"
 	"github.com/google/uuid"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/urlvalues"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag"
 	"github.com/samber/lo"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/urlvalues"
+	"github.com/thommyho/robotui/vehicle/vag"
 	"golang.org/x/net/publicsuffix"
 )
 

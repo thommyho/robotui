@@ -1,8 +1,8 @@
 package db
 
 import (
-	"github.com/robotuimyhorobotuiotui/util"
 	serverdb "github.com/thommyho/robotui/server/db"
+	"github.com/thommyho/robotui/util"
 	"gorm.io/gorm"
 )
 

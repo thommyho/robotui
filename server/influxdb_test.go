@@ -45,7 +45,7 @@ func TestInfluxTypes(t *testing.T) {
 	}
 
 	{
-		// nil value - https://github.com/robotuimyhorobotuiotui/issues/5950
+		// nil value - https://github.com/thommyho/robotui/issues/5950
 		w := &influxWriter{
 			t: t, p: []*write.Point{inf2.NewPoint("phasesConfigured", nil, map[string]any{"value": nil}, m.clock.Now())},
 		}

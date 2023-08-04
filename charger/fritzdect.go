@@ -4,9 +4,9 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/robotuimyhorobotuiotui/meter/fritzdect"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/fritzdect"
+	"github.com/thommyho/robotui/util"
 )
 
 // AVM FritzBox AHA interface specifications:

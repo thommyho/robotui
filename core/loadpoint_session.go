@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/robotuimyhorobotuiotui/core/db"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/db"
 )
 
 func (lp *Loadpoint) chargeMeterTotal() float64 {

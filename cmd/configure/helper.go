@@ -5,10 +5,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
-	"github.com/robotuimyhorobotuiotui/util/templates"
 	"github.com/thommyho/robotui/provider/mqtt"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/sponsor"
+	"github.com/thommyho/robotui/util/templates"
 	stripmd "github.com/writeas/go-strip-markdown/v2"
 	"golang.org/x/exp/slices"
 	"gopkg.in/yaml.v3"

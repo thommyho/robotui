@@ -3,10 +3,10 @@ package service
 import (
 	"net/url"
 
-	"github.com/robotuimyhorobotuiotui/vehicle/vag"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/mbb"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/vwidentity"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle/vag"
+	"github.com/thommyho/robotui/vehicle/vag/mbb"
+	"github.com/thommyho/robotui/vehicle/vag/vwidentity"
 )
 
 // MbbTokenSource creates a refreshing token source for use with the MBB api.

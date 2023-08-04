@@ -1,9 +1,9 @@
 package meter
 
 import (
-	"github.com/robotuimyhorobotuiotui/meter/tplink"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/tplink"
+	"github.com/thommyho/robotui/util"
 )
 
 func init() {

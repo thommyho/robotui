@@ -3,12 +3,12 @@ package vehicle
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/service"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/tokenrefreshservice"
-	"github.com/robotuimyhorobotuiotui/vehicle/vw"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/vag/service"
+	"github.com/thommyho/robotui/vehicle/vag/tokenrefreshservice"
+	"github.com/thommyho/robotui/vehicle/vw"
 )
 
 // https://github.com/trocotronic/weconnect

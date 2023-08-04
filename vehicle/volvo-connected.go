@@ -3,9 +3,9 @@ package vehicle
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/vehicle/volvo/connected"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle/volvo/connected"
 )
 
 // VolvoConnected is an api.Vehicle implementation for Volvo Connected Car vehicles

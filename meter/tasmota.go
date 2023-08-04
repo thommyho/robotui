@@ -1,9 +1,9 @@
 package meter
 
 import (
-	"github.com/robotuimyhorobotuiotui/meter/tasmota"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/tasmota"
+	"github.com/thommyho/robotui/util"
 )
 
 // Tasmota meter implementation

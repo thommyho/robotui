@@ -3,8 +3,8 @@ package jlr
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/provider"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
 )
 
 type Provider struct {

@@ -6,8 +6,8 @@ import (
 	"time"
 
 	wattpilot "github.com/mabunixda/wattpilot"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
 )
 
 // Wattpilot charger implementation

@@ -3,10 +3,10 @@ package charger
 import (
 	"errors"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/modbus"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/modbus"
+	"github.com/thommyho/robotui/util/sponsor"
 )
 
 const (

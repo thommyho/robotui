@@ -8,11 +8,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/machine"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/server/db/settings"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/machine"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/sponsor"
 )
 
 const (

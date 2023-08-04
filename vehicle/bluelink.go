@@ -3,9 +3,9 @@ package vehicle
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/vehicle/bluelink"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/vehicle/bluelink"
 )
 
 // https://github.com/Hacksore/bluelinky

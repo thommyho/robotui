@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/provider/pipeline"
+	"github.com/thommyho/robotui/util"
 )
 
 type msgHandler struct {

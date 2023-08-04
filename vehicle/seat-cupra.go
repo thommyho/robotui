@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/seat"
-	"github.com/robotuimyhorobotuiotui/vehicle/seat/cupra"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/tokenrefreshservice"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/vwidentity"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/seat"
+	"github.com/thommyho/robotui/vehicle/seat/cupra"
+	"github.com/thommyho/robotui/vehicle/vag/tokenrefreshservice"
+	"github.com/thommyho/robotui/vehicle/vag/vwidentity"
 	"golang.org/x/oauth2"
 )
 

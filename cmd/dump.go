@@ -9,9 +9,9 @@ import (
 	"text/template"
 
 	"github.com/Masterminds/sprig/v3"
-	"github.com/robotuimyhorobotuiotui/server"
 	"github.com/spf13/cobra"
 	"github.com/thommyho/robotui/core"
+	"github.com/thommyho/robotui/server"
 )
 
 // dumpCmd represents the meter command

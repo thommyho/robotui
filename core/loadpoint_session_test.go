@@ -6,12 +6,12 @@ import (
 
 	"github.com/benbjohnson/clock"
 	"github.com/golang/mock/gomock"
-	coredb "github.com/robotuimyhorobotuiotui/core/db"
-	"github.com/robotuimyhorobotuiotui/mock"
-	serverdb "github.com/robotuimyhorobotuiotui/server/db"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/stretchr/testify/assert"
 	"github.com/thommyho/robotui/api"
+	coredb "github.com/thommyho/robotui/core/db"
+	"github.com/thommyho/robotui/mock"
+	serverdb "github.com/thommyho/robotui/server/db"
+	"github.com/thommyho/robotui/util"
 )
 
 func TestSession(t *testing.T) {

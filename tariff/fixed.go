@@ -6,9 +6,9 @@ import (
 
 	"github.com/benbjohnson/clock"
 	"github.com/golang-module/carbon/v2"
-	"github.com/robotuimyhorobotuiotui/tariff/fixed"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/tariff/fixed"
+	"github.com/thommyho/robotui/util"
 )
 
 type Fixed struct {

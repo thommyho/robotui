@@ -3,8 +3,8 @@ package provider
 import (
 	"fmt"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/provider/golang"
+	"github.com/thommyho/robotui/util"
 	"github.com/traefik/yaegi/interp"
 )
 

@@ -30,13 +30,13 @@ import (
 
 	"github.com/cenkalti/backoff/v4"
 	"github.com/philippseith/signalr"
-	"github.com/robotuimyhorobotuiotui/charger/easee"
-	"github.com/robotuimyhorobotuiotui/core/loadpoint"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/samber/lo"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/easee"
+	"github.com/thommyho/robotui/core/loadpoint"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/sponsor"
 	"golang.org/x/oauth2"
 )
 
@@ -270,7 +270,7 @@ func (c *Easee) ProductUpdate(i json.RawMessage) {
 		return
 	}
 
-	// https://github.com/robotuimyhorobotuiotui/issues/8009
+	// https://github.com/thommyho/robotui/issues/8009
 	// logging might be slow or block, execute outside lock
 	c.log.TRACE.Printf("ProductUpdate %s: (%v) %s %v", res.Mid, res.Timestamp, res.ID, value)
 

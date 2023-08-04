@@ -3,12 +3,12 @@ package vehicle
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/loginapps"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/vwidentity"
-	"github.com/robotuimyhorobotuiotui/vehicle/vw/id"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/vag/loginapps"
+	"github.com/thommyho/robotui/vehicle/vag/vwidentity"
+	"github.com/thommyho/robotui/vehicle/vw/id"
 )
 
 // https://github.com/TA2k/ioBroker.vw-connect

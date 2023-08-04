@@ -3,8 +3,8 @@ package configure
 import (
 	"fmt"
 
-	"github.com/robotuimyhorobotuiotui/cmd/shutdown"
 	"github.com/thommyho/robotui/charger/eebus"
+	"github.com/thommyho/robotui/cmd/shutdown"
 )
 
 // configureEEBus setup EEBus

@@ -3,9 +3,9 @@ package charger
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/meter/homematic"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/homematic"
+	"github.com/thommyho/robotui/util"
 )
 
 // Homematic CCU charger implementation

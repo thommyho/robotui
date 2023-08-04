@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util/transport"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/transport"
 )
 
 // Timeout is the default request timeout used by the Helper

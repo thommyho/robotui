@@ -3,10 +3,10 @@ package aazsproxy
 import (
 	"net/http"
 
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/cariad"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/vag"
+	"github.com/thommyho/robotui/vehicle/vag/cariad"
 	"golang.org/x/oauth2"
 )
 

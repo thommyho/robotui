@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/transport"
 	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/transport"
 )
 
 // Homematic plugable switchchannel and meterchannel charger based on CCU XML-RPC interface

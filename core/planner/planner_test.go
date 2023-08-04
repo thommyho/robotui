@@ -6,10 +6,10 @@ import (
 
 	"github.com/benbjohnson/clock"
 	"github.com/golang/mock/gomock"
-	"github.com/robotuimyhorobotuiotui/mock"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/stretchr/testify/assert"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/mock"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/exp/slices"
 )
 

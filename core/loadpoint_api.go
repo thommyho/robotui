@@ -6,9 +6,9 @@ import (
 	"math"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/core/loadpoint"
-	"github.com/robotuimyhorobotuiotui/core/wrapper"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/loadpoint"
+	"github.com/thommyho/robotui/core/wrapper"
 )
 
 var _ loadpoint.API = (*Loadpoint)(nil)

@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/robotuimyhorobotuiotui/core/site"
 	"github.com/thommyho/robotui/cmd/shutdown"
+	"github.com/thommyho/robotui/core/site"
 )
 
 // SocketPath is the unix domain socket path

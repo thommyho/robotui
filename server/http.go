@@ -8,10 +8,10 @@ import (
 	"github.com/go-http-utils/etag"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
-	"github.com/robotuimyhorobotuiotui/server/assets"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/telemetry"
 	"github.com/thommyho/robotui/core/site"
+	"github.com/thommyho/robotui/server/assets"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/telemetry"
 )
 
 type route struct {

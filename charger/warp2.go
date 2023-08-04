@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/charger/warp"
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/provider/mqtt"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/warp"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/provider/mqtt"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/exp/slices"
 )
 

@@ -3,8 +3,8 @@ package meter
 import (
 	"testing"
 
-	"github.com/robotuimyhorobotuiotui/util/test"
 	"github.com/thommyho/robotui/util/templates"
+	"github.com/thommyho/robotui/util/test"
 )
 
 var acceptable = []string{

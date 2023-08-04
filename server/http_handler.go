@@ -12,11 +12,11 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/robotuimyhorobotuiotui/core/loadpoint"
-	"github.com/robotuimyhorobotuiotui/core/site"
-	"github.com/robotuimyhorobotuiotui/server/assets"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/core/loadpoint"
+	"github.com/thommyho/robotui/core/site"
+	"github.com/thommyho/robotui/server/assets"
+	"github.com/thommyho/robotui/util"
 )
 
 var ignoreState = []string{"releaseNotes"} // excessive size

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/detect/tasks"
+	"github.com/thommyho/robotui/util"
 )
 
 type TaskList struct {

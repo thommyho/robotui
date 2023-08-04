@@ -1,9 +1,9 @@
 package meter
 
 import (
-	"github.com/robotuimyhorobotuiotui/meter/tapo"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/meter/tapo"
+	"github.com/thommyho/robotui/util"
 )
 
 // TP-Link Tapo meter implementation

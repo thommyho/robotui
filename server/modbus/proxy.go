@@ -5,10 +5,10 @@ import (
 	"net"
 
 	"github.com/andig/mbserver"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/modbus"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/modbus"
+	"github.com/thommyho/robotui/util/sponsor"
 )
 
 func StartProxy(port int, config modbus.Settings, readOnly bool) error {

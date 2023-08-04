@@ -7,7 +7,7 @@ package mock
 import (
 	reflect "reflect"
 
-	api "github.com/robotuimyhorobotuiotui/api"
+	api "github.com/thommyho/robotui/api"
 	gomock "github.com/golang/mock/gomock"
 )
 

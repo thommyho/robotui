@@ -3,8 +3,8 @@ package ford
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/provider"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
 )
 
 const refreshTimeout = time.Minute

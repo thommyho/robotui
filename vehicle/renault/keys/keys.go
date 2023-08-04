@@ -3,8 +3,8 @@ package keys
 import (
 	"fmt"
 
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
 )
 
 const keyStore = "https://renault-wrd-prod-1-euw1-myrapp-one.s3-eu-west-1.amazonaws.com/configuration/android/config_%s.json"

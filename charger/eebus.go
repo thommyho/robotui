@@ -9,10 +9,10 @@ import (
 
 	"github.com/enbility/cemd/emobility"
 	"github.com/enbility/eebus-go/features"
-	"github.com/robotuimyhorobotuiotui/charger/eebus"
-	"github.com/robotuimyhorobotuiotui/core/loadpoint"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/eebus"
+	"github.com/thommyho/robotui/core/loadpoint"
+	"github.com/thommyho/robotui/util"
 )
 
 const (

@@ -3,12 +3,12 @@ package vehicle
 import (
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/vehicle/skoda"
-	"github.com/robotuimyhorobotuiotui/vehicle/skoda/connect"
-	"github.com/robotuimyhorobotuiotui/vehicle/vag/service"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/vehicle/skoda"
+	"github.com/thommyho/robotui/vehicle/skoda/connect"
+	"github.com/thommyho/robotui/vehicle/vag/service"
 )
 
 // https://github.com/lendy007/skodaconnect

@@ -30,7 +30,7 @@ const (
 
 // Settings contains the ModBus TCP settings
 // RTU field is included for compatibility with modbus.tpl which renders rtu: false for TCP
-// TODO remove RTU field (https://github.com/robotuimyhorobotuiotui/issues/3360)
+// TODO remove RTU field (https://github.com/thommyho/robotui/issues/3360)
 type TcpSettings struct {
 	URI string
 	ID  uint8

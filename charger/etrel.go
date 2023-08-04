@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/modbus"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/modbus"
+	"github.com/thommyho/robotui/util/sponsor"
 	"github.com/volkszaehler/mbmd/encoding"
 )
 
@@ -42,7 +42,7 @@ const (
 	etrelRegHWVersion     = 1010
 	etrelRegSWVersion     = 1015
 
-	// Always zero, see https://github.com/robotuimyhorobotuiotui/issues/5346
+	// Always zero, see https://github.com/thommyho/robotui/issues/5346
 	//etrelRegSessionEnergy = 30
 	//etrelRegChargeTime    = 32
 

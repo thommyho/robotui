@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/transport"
-	"github.com/robotuimyhorobotuiotui/vehicle/volvo"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/transport"
+	"github.com/thommyho/robotui/vehicle/volvo"
 )
 
 // Volvo is an api.Vehicle implementation for Volvo. cars

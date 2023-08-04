@@ -12,10 +12,10 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	cv "github.com/nirasan/go-oauth-pkce-code-verifier"
-	"github.com/robotuimyhorobotuiotui/util/oauth"
-	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/samber/lo"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/oauth"
+	"github.com/thommyho/robotui/util/request"
 	"golang.org/x/oauth2"
 )
 

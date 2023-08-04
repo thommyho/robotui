@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/andig/mbserver"
-	"github.com/robotuimyhorobotuiotui/util/modbus"
 	"github.com/stretchr/testify/assert"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/modbus"
 )
 
 func TestConcurrentRead(t *testing.T) {

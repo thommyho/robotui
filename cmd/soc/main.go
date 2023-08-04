@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
-	"github.com/robotuimyhorobotuiotui/vehicle"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/sponsor"
+	"github.com/thommyho/robotui/vehicle"
 )
 
 func usage() {

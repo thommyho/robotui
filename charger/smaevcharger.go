@@ -25,12 +25,12 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-version"
-	"github.com/robotuimyhorobotuiotui/charger/smaevcharger"
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/charger/smaevcharger"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/sponsor"
 	"golang.org/x/oauth2"
 )
 

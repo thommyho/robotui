@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/robotuimyhorobotuiotui/provider"
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/provider"
+	"github.com/thommyho/robotui/util"
 )
 
 // Charger is an api.Charger implementation with configurable getters and setters.

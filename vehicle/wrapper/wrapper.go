@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
 )
 
 // Wrapper wraps an api.Vehicle to capture initialization errors

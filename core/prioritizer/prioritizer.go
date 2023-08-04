@@ -3,8 +3,8 @@ package prioritizer
 import (
 	"fmt"
 
-	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/thommyho/robotui/core/loadpoint"
+	"github.com/thommyho/robotui/util"
 )
 
 type Prioritizer struct {

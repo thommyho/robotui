@@ -46,7 +46,7 @@ func kv(p util.Param) string {
 	}
 
 	if p.Key == "" && val == "" {
-		log.ERROR.Printf("invalid key/val for %+v %# v, please report to https://github.com/robotuimyhorobotuiotui/issues/6439", p, pretty.Formatter(p.Val))
+		log.ERROR.Printf("invalid key/val for %+v %# v, please report to https://github.com/thommyho/robotui/issues/6439", p, pretty.Formatter(p.Val))
 		return "\"foo\":\"bar\""
 	}
 

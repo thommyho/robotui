@@ -24,14 +24,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/modbus"
-	"github.com/robotuimyhorobotuiotui/util/sponsor"
 	"github.com/thommyho/robotui/api"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/modbus"
+	"github.com/thommyho/robotui/util/sponsor"
 	"github.com/volkszaehler/mbmd/meters/rs485"
 )
 
-// https://github.com/robotuimyhorobotuiotui/discussions/1965
+// https://github.com/thommyho/robotui/discussions/1965
 
 // Alfen charger implementation
 type Alfen struct {

@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/jpfielding/go-http-digest/pkg/digest"
-	"github.com/robotuimyhorobotuiotui/util"
-	"github.com/robotuimyhorobotuiotui/util/request"
-	"github.com/robotuimyhorobotuiotui/util/transport"
 	"github.com/thommyho/robotui/provider/pipeline"
+	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/request"
+	"github.com/thommyho/robotui/util/transport"
 )
 
 // HTTP implements HTTP request provider

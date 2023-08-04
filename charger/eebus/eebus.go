@@ -18,8 +18,8 @@ import (
 	"github.com/enbility/cemd/emobility"
 	"github.com/enbility/eebus-go/service"
 	"github.com/enbility/eebus-go/spine/model"
-	"github.com/robotuimyhorobotuiotui/util/machine"
 	"github.com/thommyho/robotui/util"
+	"github.com/thommyho/robotui/util/machine"
 )
 
 const (
