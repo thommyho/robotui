@@ -1,0 +1,25 @@
+template: kostal-ksem
+products:
+  - brand: Kostal
+    description:
+      generic: Smart Energy Meter
+params:
+  - name: usage
+    choice: ["grid"]
+  - name: modbus
+    choice: ["tcpip"]
+    id: 71
+render: |
+  type: modbus
+  {{- include "modbus" . }}
+  model: sunspec
+  power: Power
+  energy: Import
+  currents:
+    - CurrentL1
+    - CurrentL2
+    - CurrentL3
+  powers:
+    - PowerL1
+    - PowerL2
+    - PowerL3

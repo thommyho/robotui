@@ -1,0 +1,83 @@
+dist: release
+release:
+  disable: true
+
+builds:
+  - id: robotui
+    main: main.go
+    flags:
+      - -tags=release
+    ldflags:
+      - -X github.com/thommyho/robotui/server.Version={{ .Tag }} -X github.com/thommyho/robotui/server.Commit={{ .ShortCommit }} -s -w
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm
+      - arm64
+    goarm:
+      - "6"
+    ignore:
+      - goos: windows
+        goarch: arm
+      - goos: windows
+        goarch: arm64
+
+archives:
+  - builds:
+      - robotui
+    format: tar.gz
+    format_overrides:
+      - goos: windows
+        format: zip
+    files:
+      - robotui.dist.yaml
+    name_template: >-
+      {{ .ProjectName }}_{{ .Version }}_{{ if eq .Os "darwin" }}macOS{{ else }}{{ .Os }}{{ end }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}
+
+env:
+  - CGO_ENABLED=0
+
+universal_binaries:
+  - replace: true
+
+checksum:
+  name_template: "checksums.txt"
+
+snapshot:
+  name_template: '{{ .Version }}{{ if eq (len (split .Version ".")) 2 }}.0{{ end }}+{{ .Timestamp }}'
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^chore"
+      - "^bump"
+      - "^docs:"
+      - "^test:"
+
+nfpms:
+  - id: default
+    package_name: robotui
+    file_name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}-{{ .Arch }}{{ if .Arm }}hf{{ end }}"
+
+    homepage: https://robotui.io
+    description: EV Charge Controller
+    maintainer: andig <cpuidle@gmx.de>
+    license: MIT
+    vendor: robotui.io
+
+    formats:
+      - deb
+
+    contents:
+      - src: ./packaging/init/robotui.service
+        dst: /lib/systemd/system/robotui.service
+
+    scripts:
+      preinstall: ./packaging/scripts/preinstall.sh
+      postinstall: ./packaging/scripts/postinstall.sh
+      preremove: ./packaging/scripts/preremove.sh
+      postremove: ./packaging/scripts/postremove.sh

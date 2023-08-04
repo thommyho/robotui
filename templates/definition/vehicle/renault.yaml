@@ -1,0 +1,12 @@
+template: renault
+products:
+  - brand: Renault
+params:
+  - preset: vehicle-base
+  - preset: vehicle-identify
+  - name: vin
+    example: WREN...
+render: |
+  type: renault
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

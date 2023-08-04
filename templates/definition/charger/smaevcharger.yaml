@@ -1,0 +1,24 @@
+template: smaevcharger
+products:
+  - brand: SMA
+    description:
+      generic: EV Charger
+capabilities: ["mA"]
+requirements:
+  robotui: ["sponsorship"]
+  description:
+    de: Der EV Charger muss sich im Modus "Fast" befinden und der Benutzer muss die Rechte "Administrator" haben.
+    en: The charger must be switched to "Fast" charging mode and the user must have "Administrator" rights.
+params:
+  - name: host
+    required: true
+  - name: user
+    required: true
+  - name: password
+    required: true
+    mask: true
+render: |
+  type: smaevcharger
+  uri: http://{{ .host }}
+  user: {{ .user }}
+  password: {{ .password }}

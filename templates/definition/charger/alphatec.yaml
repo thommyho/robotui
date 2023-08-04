@@ -1,0 +1,17 @@
+template: alphatec
+products:
+  - brand: Alphatec
+    description:
+      generic: Wallbox Mini/ AW1eM
+requirements:
+  robotui: ["sponsorship"]
+params:
+  - name: modbus
+    choice: ["rs485"]
+    baudrate: 9600
+    comset: 8N1
+  - name: timeout
+render: |
+  type: alphatec
+  {{- include "modbus" . }}
+  timeout: {{ .timeout }}

@@ -1,0 +1,12 @@
+template: mini
+products:
+  - brand: Mini
+params:
+  - preset: vehicle-base
+  - preset: vehicle-identify
+  - name: vin
+    example: WBMW...
+render: |
+  type: mini
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

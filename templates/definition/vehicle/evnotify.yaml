@@ -1,0 +1,34 @@
+template: evnotify
+products:
+  - description:
+      generic: evNotify
+group: generic
+params:
+  - name: title
+  - name: akey
+    required: true
+  - name: token
+    required: true
+  - name: capacity
+    type: float
+  - name: phases
+    advanced: true
+  - name: icon
+    default: car
+    advanced: true
+  - preset: vehicle-identify
+render: |
+  type: custom
+  {{- if .title }}
+  title: {{ .title }}
+  {{- end }}
+  capacity: {{ .capacity }}
+  {{- if .phases }}
+  phases: {{ .phases }}
+  {{- end }}
+  soc:
+    source: http
+    uri: https://app.evnotify.de/soc?akey={{ urlEncode .akey }}&token={{ urlEncode .token }} # evNotify Server + AKEY
+    method: GET
+    jq: .soc_display
+  {{ include "vehicle-identify" . }}

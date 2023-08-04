@@ -1,0 +1,22 @@
+template: tesla-powerwall
+products:
+  - brand: Tesla
+    description:
+      generic: Powerwall
+params:
+  - name: usage
+    choice: ["grid", "pv", "battery"]
+    allinone: true
+  - name: host
+  - name: password
+    required: true
+    mask: true
+    help:
+      en: Password of the user "customer"
+      de: Passwort des Benutzers "Kunde"
+render: |
+  type: powerwall
+  uri: {{ .host }}
+  usage: {{ .usage }}
+  user: customer
+  password: {{ .password }} # for user 'customer'

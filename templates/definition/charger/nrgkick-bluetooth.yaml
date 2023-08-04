@@ -1,0 +1,15 @@
+template: nrgkick-bluetooth
+products:
+  - brand: NRGKick
+    description:
+      generic: Bluetooth
+params:
+  - name: mac
+    required: true
+  - name: pin
+    required: true
+    mask: true
+render: |
+  type: nrgkick-bluetooth
+  mac: {{ .mac }}
+  pin: {{ .pin }}

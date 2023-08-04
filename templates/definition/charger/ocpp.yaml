@@ -1,0 +1,86 @@
+template: ocpp
+products:
+  - description:
+      de: OCPP 1.6J kompatible Wallbox mit Smart Charging Profil
+      en: OCPP 1.6J compatible charger with Smart Charging Profile
+group: generic
+requirements:
+  description:
+    de: |
+      Bei OCPP verbindet sich die Wallbox (Client) zu robotui (Server).
+      Die Wallbox muss daher robotui via Hostname (funktionierende DNS-Auflösung erforderlich!) oder über die IP-Adresse auf Port 8887 erreichen können.
+      Standardmäßig wird die erste eingehende Verbindung mit einer beliebigen Ladepunktkennung verwendet.
+      Um mehrere Ladepunkte eindeutig zuordnen zu können müssen die jeweilige Stationskennung (`stationid: `) und Anschlussnummer (`connector: `) hinterlegt werden.
+      Viele Wallboxen fügen die `stationid` automatisch der Backend-URL hinzu, bei manchen muss dies händisch geschehen `ws://<robotui>:8887/<stationid>`.
+      Gegebenenfalls benötigt der Ladepunkt eine vorkonfigurierte (virtuelle) Token-ID/RFID-Kennung (`idtag: `) mit der die Ladevorgänge ohne Authentifizierung gestartet werden können.
+      Für Zählermesswerte sollte in der Wallbox ein kurzes Zeitintervall konfiguriert werden.
+
+      Voraussetzungen:
+      * Ggf. zuvor konfigurierte OCPP-Profile (z.B. durch eine andere Backend-Anbindung) in der Wallboxkonfiguration entfernen
+      * Backend-URL (Central System) in der Wallboxkonfiguration: `ws://[robotui-adresse]:8887/` (evtl noch um `stationid` erweitern)
+      * Protokoll: OCPP-J v1.6, ocpp16j, JSON, Websocket, ws:// o.ä.
+      * Keine Verschlüsselung, keine Authentifizierung, kein Passwort
+      * Verbindung über das lokale Netzwerk
+    en: |
+      With OCPP the connection will be established from charger (client) to robotui (server).
+      The charger needs to be able to reach robotui via the host name (functioning DNS resolution required!) or via the IP address on port 8887.
+      By default, the first incoming connection with any station identifier is used.
+      In order to be able to clearly assign several charging points, the respective station identifier (`stationid: `) and connector number (`connector: `) must be configured.
+      Many wallboxes automatically add the `station id` to the backend URL, some have to do this manually `ws://<robotui>:8887/<stationid>`.
+      The charger may need a pre-configured (virtual) token ID/RFID identifier (`idtag: `) with which the charging sessions can be started without authorization.
+      If the charger supports sending metering values try to adjust the interval to a short time span.
+
+      Requirements:
+      * If necessary, remove previously configured OCPP profiles (e.g. used for a different backend connection) in the charger configuration
+      * Backend URL (Central System) in the charger configuration: `ws://[robotui-adresse]:8887/` (possibly add `stationid`)
+      * Protocol: OCPP-J v1.6, ocpp16j, JSON, Websocket, ws:// or similar
+      * No encryption, no authentication, no password
+      * Local network connection
+params:
+  - preset: ocpp
+  - name: getconfiguration
+    advanced: true
+    type: bool
+    default: true
+    description:
+      de: GetConfiguration benutzen
+      en: Use GetConfiguration request
+    help:
+      de: Deaktivierung kann bei einigen Chargern hilfreich sein
+      en: Deactivating can help with certain chargers
+  - name: bootnotification
+    advanced: true
+    type: bool
+    default: false
+    description:
+      de: BootNotification benutzen
+      en: Use BootNotification request
+    help:
+      de: Aktivierung kann bei einigen Chargern hilfreich sein
+      en: Activating can help with certain chargers
+  - name: meterinterval
+    advanced: true
+    type: duration
+    description:
+      de: Zählerwerte nach Intervall anfordern
+      en: Interval for requesting meter values
+  - name: metervalues
+    advanced: true
+    type: string
+    description:
+      de: Liste der Zählerwerte
+      en: List of meter values
+render: |
+  {{ include "ocpp" . }}
+  {{- if ne .getconfiguration "true" }}
+  getconfiguration: {{ .getconfiguration }}
+  {{- end }}
+  {{- if ne .bootnotification "false" }}
+  bootnotification: {{ .bootnotification }}
+  {{- end }}
+  {{- if .meterinterval }}
+  meterinterval: {{ .meterinterval }}
+  {{- end }}
+  {{- if .metervalues }}
+  metervalues: {{ .metervalues }}
+  {{- end }}

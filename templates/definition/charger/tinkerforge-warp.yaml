@@ -1,0 +1,31 @@
+template: tinkerforge-warp
+covers:
+  - tinkerforge-warp-pro
+products:
+  - brand: TinkerForge
+    description:
+      generic: WARP Charger Smart
+  - brand: TinkerForge
+    description:
+      generic: WARP Charger Pro
+capabilities: ["mA"]
+requirements:
+  description:
+    en: Firmware v2 required.
+    de: Firmware v2 erforderlich.
+  uri: https://docs.robotui.io/docs/devices/chargers#tinkerforge
+params:
+  - preset: mqtt
+  - name: topic
+    default: warp
+  - name: energymanager
+    help:
+      de: EnergyManager MQTT Topic (falls installiert)
+      en: EnergyManager MQTT topic if installed
+render: |
+  type: warp2
+  {{ include "mqtt" . }}
+  topic: {{ .topic }}
+  {{- if .energymanager }}
+  energymanager: {{ .energymanager }}
+  {{- end }}

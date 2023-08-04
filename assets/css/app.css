@@ -1,0 +1,413 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat-Medium.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat-Bold.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* Bootstrap Breakpoints as Custom Media Queries */
+@custom-media --sm-and-up (min-width: 576px);
+@custom-media --md-and-up (min-width: 768px);
+@custom-media --lg-and-up (min-width: 992px);
+@custom-media --xl-and-up (min-width: 1200px);
+@custom-media --xxl-and-up (min-width: 1400px);
+
+@custom-media --light-mode (prefers-color-scheme: light);
+@custom-media --dark-mode (prefers-color-scheme: dark);
+
+:root {
+	--robotui-green: #baffcb;
+	--robotui-dark-green: #0fde41;
+	--robotui-darker-green: #0ba631;
+	--robotui-darkest-green: #076f20;
+	--robotui-yellow: #faf000;
+	--robotui-dark-yellow: #bbb400;
+	--bs-gray-deep: #010322;
+	--bs-gray-dark: #28293e;
+	--bs-gray-medium: #93949e;
+	--bs-gray-light: #b5b6c3;
+	--bs-gray-bright: #f3f3f7;
+
+	--robotui-grid: var(--bs-gray-dark);
+	--robotui-self: var(--robotui-dark-green);
+	--robotui-export: var(--robotui-yellow);
+	--robotui-background: var(--bs-gray-bright);
+	--robotui-box: var(--bs-white);
+	--robotui-default-text: var(--bs-gray-dark);
+	--robotui-gray: var(--bs-gray-medium);
+
+	--robotui-accent1: var(--robotui-dark-yellow);
+	--robotui-accent2: var(--robotui-darker-green);
+	--robotui-accent3: var(--robotui-darkest-green);
+
+	--robotui-transition-slow: 1000ms;
+	--robotui-transition-medium: 500ms;
+	--robotui-transition-fast: 250ms;
+	--robotui-transition-very-fast: 100ms;
+
+	--bs-primary: var(--robotui-darker-green);
+	--bs-primary-rgb: 11, 166, 49;
+
+	--bs-body-font-size: 14px;
+	--bs-font-sans-serif: Montserrat, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+		Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol", "Noto Color Emoji";
+	--bs-success: var(--robotui-primary);
+	--bs-success-rgb: var(--bs-primary-rgb);
+}
+
+:root.dark {
+	--robotui-grid: var(--bs-gray-medium);
+	--robotui-background: var(--bs-gray-deep);
+	--robotui-box: var(--bs-gray-dark);
+	--robotui-default-text: var(--bs-white);
+	--robotui-gray: var(--bs-gray-light);
+	--robotui-accent1: var(--robotui-yellow);
+	--robotui-accent2: var(--robotui-dark-green);
+	--robotui-accent3: var(--robotui-darker-green);
+	--bs-primary: var(--robotui-dark-green);
+}
+
+html {
+	/* prevents content jump when scrollbar is activate */
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+html.no-transitions * {
+	transition: none !important;
+}
+
+body {
+	background-color: var(--robotui-background);
+	color: var(--robotui-default-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: bold;
+}
+
+h1,
+h2 {
+	font-size: 1.25rem;
+	text-transform: uppercase;
+}
+
+h3,
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.large {
+	font-size: 1.25rem;
+	line-height: 1.2;
+}
+
+.bg-primary {
+	background-color: var(--robotui-dark-green) !important;
+}
+
+.bg-dark-green {
+	background-color: var(--robotui-dark-green) !important;
+}
+
+.bg-darker-green {
+	background-color: var(--robotui-darker-green) !important;
+}
+
+.bg-darkest-green {
+	background-color: var(--robotui-darkest-green) !important;
+}
+
+.text-primary {
+	color: var(--bs-primary) !important;
+}
+
+a {
+	color: var(--bs-primary);
+}
+
+a:hover {
+	color: var(--robotui-accent3);
+}
+
+/* reverse loading animation */
+.progress-bar-animated {
+	animation-direction: reverse;
+}
+.bg-muted {
+	opacity: 0.25;
+}
+
+.rounded {
+	border-radius: 10px !important;
+}
+
+.btn {
+	--bs-btn-border-width: 2px;
+}
+
+.btn-primary,
+.btn-primary:focus {
+	background-color: var(--bs-primary);
+	border-color: var(--bs-primary);
+	color: var(--robotui-background);
+}
+
+.btn-primary:hover {
+	background-color: var(--robotui-accent3);
+	border-color: var(--robotui-accent3);
+}
+
+.btn-primary:active {
+	color: var(--robotui-default-text) !important;
+	background-color: var(--robotui-accent3) !important;
+	border-color: var(--robotui-accent3) !important;
+}
+
+.btn:disabled {
+	color: inherit !important;
+	background-color: inherit !important;
+	border-color: inherit !important;
+	opacity: 0.2;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:focus {
+	color: var(--bs-primary);
+	background-color: transparent;
+	border-color: var(--bs-primary);
+}
+.btn-outline-primary:hover {
+	color: var(--robotui-accent3) !important;
+	background-color: transparent !important;
+	border-color: var(--robotui-accent3) !important;
+}
+.btn-outline-primary:active {
+	color: var(--robotui-default-text) !important;
+	background-color: var(--robotui-accent3) !important;
+	border-color: var(--robotui-accent3) !important;
+}
+
+.btn-xs {
+	--bs-btn-padding-y: 0;
+	--bs-btn-padding-x: 0.5rem;
+	--bs-btn-font-size: 0.7rem;
+	--bs-btn-border-radius: 0.25rem;
+	--bs-btn-line-height: 2;
+}
+
+.dark .btn-outline-secondary {
+	--bs-btn-color: var(--bs-gray-bright);
+	--bs-btn-border-color: var(--bs-gray-bright);
+	--bs-btn-hover-bg: var(--bs-gray-bright);
+	--bs-btn-hover-color: var(--bs-gray-dark);
+}
+
+.accordion {
+	--bs-accordion-active-color: var(--bs-text);
+	--bs-accordion-active-bg: var(--robotui-background);
+	--bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
+
+.text-robotui {
+	color: var(--robotui-dark-green);
+}
+.text-accent1 {
+	color: var(--robotui-accent1);
+}
+.text-accent2 {
+	color: var(--robotui-accent2);
+}
+.text-accent3 {
+	color: var(--robotui-accent3);
+}
+
+.robotui-default-text {
+	color: var(--robotui-default-text) !important;
+}
+.robotui-gray {
+	color: var(--robotui-gray);
+}
+.text-grid {
+	color: var(--robotui-grid);
+}
+.text-dark {
+	color: var(--bs-gray-dark);
+}
+.text-light {
+	color: var(--bs-gray-bright);
+}
+.text-gray {
+	color: var(--bs-gray-medium);
+}
+.text-gray-medium {
+	color: var(--bs-gray-medium);
+}
+.text-gray-light {
+	color: var(--bs-gray-light);
+}
+.bg-dark {
+	background-color: var(--bs-gray-dark) !important;
+}
+
+@media screen and (min-width: 400px) and (max-width: 574px) {
+	.d-xs-none {
+		display: none !important;
+	}
+	.d-xs-inline {
+		display: inline !important;
+	}
+}
+
+/* breakpoint lg */
+@media (min-width: 992px) {
+	.modal-lg,
+	.modal-xl {
+		--bs-modal-width: 850px;
+	}
+}
+
+.modal-backdrop.show {
+	opacity: 0.8;
+}
+
+.modal-header {
+	padding: 0 0 1rem 0;
+	border: none;
+}
+
+.modal-title {
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+.modal-content {
+	border-radius: 1rem;
+	padding: 1.25rem;
+	background-color: var(--robotui-box);
+	color: var(--robotui-default-text);
+}
+
+/* breakpoint sm */
+@media (min-width: 576px) {
+	.modal-content {
+		padding: 2rem;
+	}
+}
+
+.modal-body {
+	padding: 1rem 0 0;
+	overflow-x: hidden;
+}
+
+.modal-footer {
+	padding: 1rem 0 0;
+	border: none;
+}
+
+.modal-footer > * {
+	margin: 0;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.v-popper__inner {
+	margin: 0 12px !important;
+}
+
+.small,
+small {
+	font-size: var(--bs-body-font-size);
+	color: var(--bs-gray-medium) !important;
+}
+
+.btn-close {
+	opacity: 1;
+}
+
+.dark .btn-close {
+	filter: invert(1);
+}
+
+.dropdown-menu {
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 8px var(--bs-gray-light);
+	background-color: var(--robotui-box);
+}
+.dropdown-item {
+	color: var(--robotui-default-text);
+}
+.dropdown-item:active {
+	background-color: var(--bs-primary);
+	color: var(--bs-white);
+}
+
+.dark .dropdown-menu {
+	box-shadow: 0 0 8px var(--robotui-background);
+}
+.dark .form-select {
+	background-color: var(--robotui-box);
+	color: var(--robotui-default-text);
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+}
+
+.dark .table {
+	--bs-table-color: var(--robotui-default-text);
+	--bs-table-border-color: var(--robotui-gray);
+}
+.nav-tabs .nav-link {
+	color: var(--robotui-gray) !important;
+}
+
+.nav-tabs .nav-link.active {
+	color: var(--robotui-default-text) !important;
+	background-color: var(--robotui-box) !important;
+	border-bottom-color: var(--robotui-box);
+}
+
+.form-check-input:checked {
+	border-color: var(--bs-primary);
+	background-color: var(--bs-primary);
+}
+
+.dark .form-switch .form-check-input:checked {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2328293e'/%3e%3c/svg%3e");
+}
+/* fix desktop safari formatting */
+input::-webkit-datetime-edit {
+	display: block;
+	padding: 0;
+}
+
+.tooltip {
+	--bs-tooltip-opacity: 1;
+	--bs-tooltip-bg: var(--bs-gray-deep);
+	--bs-tooltip-color: var(--bs-white);
+}
+
+.dark .tooltip {
+	--bs-tooltip-bg: var(--bs-white);
+	--bs-tooltip-color: var(--bs-gray-deep);
+}
+
+.table {
+	--bs-table-bg: transparent;
+}

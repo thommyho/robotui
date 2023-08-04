@@ -1,0 +1,12 @@
+template: cupra
+products:
+  - brand: Seat
+    description:
+      generic: CupraConnect Gen4 (Born)
+params:
+  - preset: vehicle-base
+  - preset: vehicle-identify
+render: |
+  type: cupra
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

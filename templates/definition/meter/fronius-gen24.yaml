@@ -1,0 +1,81 @@
+template: fronius-gen24
+products:
+  - brand: Fronius
+    description:
+      generic: Symo GEN24 Plus
+  - brand: Fronius
+    description:
+      generic: Primo GEN24 Plus
+params:
+  - name: usage
+    choice: ["grid", "pv", "battery"]
+    allinone: true
+  - name: host
+  - name: port
+    default: 502
+  - name: integer
+    deprecated: true
+  - name: capacity
+    advanced: true
+render: |
+  # reference: https://github.com/volkszaehler/mbmd/blob/master/meters/sunspec/models.go
+  {{- if eq .usage "grid" }}
+  type: modbus
+  uri: {{ .host }}:{{ .port }}
+  id: 200
+  model: sunspec
+  power: Power
+  energy: Import
+  currents: # currents are signed already
+    - CurrentL1
+    - CurrentL2
+    - CurrentL3
+  {{- end }}
+  {{- if eq .usage "pv" }}
+  type: custom
+  power:
+    source: calc
+    add:
+    - source: modbus
+      uri: {{ .host }}:{{ .port }}
+      id: 1
+      model: sunspec
+      value: 160:1:DCW # mppt 1
+    - source: modbus
+      uri: {{ .host }}:{{ .port }}
+      id: 1
+      model: sunspec
+      value: 160:2:DCW # mppt 2
+  energy:
+    source: modbus
+    uri: {{ .host }}:{{ .port }}
+    id: 1
+    model: sunspec
+    value: Export
+  {{- end }}
+  {{- if eq .usage "battery" }}
+  type: custom
+  power:
+    source: calc
+    add:
+    - source: modbus
+      uri: {{ .host }}:{{ .port }}
+      id: 1
+      model: sunspec
+      value: 160:3:DCW # mppt 3 charge
+      scale: -1
+    - source: modbus
+      uri: {{ .host }}:{{ .port }}
+      id: 1
+      model: sunspec
+      value: 160:4:DCW # mppt 4 discharge
+  soc:
+    source: modbus
+    uri: {{ .host }}:{{ .port }}
+    id: 1
+    model: sunspec
+    value: ChargeState
+  {{- if .capacity }}
+  capacity: {{ .capacity }} # kWh
+  {{- end }}
+  {{- end }}

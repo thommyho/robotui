@@ -1,0 +1,52 @@
+template: tronity
+products:
+  - description:
+      generic: Tronity
+group: generic
+requirements:
+  robotui: ["sponsorship"]
+params:
+  - name: title
+  - name: clientid
+    description:
+      generic: Tronity API Client ID
+    help:
+      de: Einrichtung unter https://app.tronity.tech
+      en: Setup at https://app.tronity.tech
+    required: true
+  - name: clientsecret
+    description:
+      generic: Tronity API Client Secret
+    help:
+      de: Einrichtung unter https://app.tronity.tech
+      en: Setup at https://app.tronity.tech
+    required: true
+  - name: vin
+    example: W...
+  - name: capacity
+    default: 10
+  - name: phases
+    advanced: true
+  - name: icon
+    default: car
+    advanced: true
+  - preset: vehicle-identify
+render: |
+  type: tronity
+  {{- if .title }}
+  title: {{ .title }}
+  {{- end }}
+  {{- if .icon }}
+  icon: {{ .icon }}
+  {{- end }}
+  credentials:
+    id: {{ .clientid }}
+    secret: {{ .clientsecret }}
+  capacity: {{ .capacity }}
+  {{- if .phases }}
+  phases: {{ .phases }}
+  {{- end }}
+  {{- if .vin }}
+  vin: {{ .vin }}
+  {{- end }}
+  {{ include "vehicle-identify" . }}

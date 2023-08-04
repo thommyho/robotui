@@ -1,0 +1,11 @@
+template: phoenix-ev-ser
+products:
+  - brand: Phoenix
+    description:
+      generic: EV-SER (Modbus RTU)
+params:
+  - name: modbus
+    choice: ["rs485"]
+render: |
+  type: phoenix-ev-ser
+  {{- include "modbus" . }}

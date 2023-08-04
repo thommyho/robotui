@@ -1,0 +1,10 @@
+template: citroen
+products:
+  - brand: Citroën
+params:
+  - preset: vehicle-base
+  - preset: vehicle-identify
+render: |
+  type: citroen
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

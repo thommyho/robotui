@@ -1,0 +1,14 @@
+template: kia
+products:
+  - brand: Kia
+    description:
+      generic: Bluelink
+params:
+  - preset: vehicle-base
+  - preset: vehicle-language
+  - preset: vehicle-identify
+render: |
+  type: kia
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-language" . }}
+  {{ include "vehicle-identify" . }}

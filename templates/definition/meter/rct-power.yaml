@@ -1,0 +1,20 @@
+template: rct-power
+products:
+  - brand: RCT
+    description:
+      generic: Power
+params:
+  - name: usage
+    choice: ["grid", "pv", "battery"]
+    allinone: true
+  - name: host
+  - name: capacity
+    advanced: true
+render: |
+  type: rct
+  uri: {{ .host }}
+  usage: {{ .usage }}
+  cache: 2s
+  {{- if .capacity }}
+  capacity: {{ .capacity }} # kWh
+  {{- end }}

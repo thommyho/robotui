@@ -1,0 +1,27 @@
+template: lg-ess-home-8-10
+products:
+  - brand: LG
+    description:
+      generic: ESS Home 8/10
+params:
+  - name: usage
+    choice: ["grid", "pv", "battery"]
+    allinone: true
+  - name: host
+  - name: registration
+    required: true
+    example: "DE200..."
+    help:
+      en: Registration number of the LG ESS HOME inverter.
+      de: Registriernummer des LG ESS HOME Wechselrichters.
+  - name: capacity
+    advanced: true
+render: |
+  type: lgess
+  usage: {{ .usage }}
+  # uri and password are only required once if multiple lgess usages are defined
+  uri: https://{{ .host }}
+  password: {{ .registration }}
+  {{- if .capacity }}
+  capacity: {{ .capacity }} # kWh
+  {{- end }}

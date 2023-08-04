@@ -1,0 +1,19 @@
+template: abl
+products:
+  - brand: ABL
+    description:
+      generic: eMH1, eMH2
+  - brand: SENEC
+    description:
+      generic: Wallbox pro
+capabilities: ["mA"]
+requirements:
+  robotui: ["sponsorship"]
+params:
+  - name: modbus
+    choice: ["rs485"]
+    baudrate: 38400
+    comset: 8E1
+render: |
+  type: abl
+  {{- include "modbus" . }}

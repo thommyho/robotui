@@ -1,0 +1,14 @@
+template: amtron
+products:
+  - brand: Mennekes
+    description:
+      generic: AMTRON XTRA, AMTRON PREMIUM
+requirements:
+  robotui: ["sponsorship"]
+params:
+  - name: modbus
+    choice: ["tcpip"]
+    id: 255
+render: |
+  type: amtron
+  {{- include "modbus" . }}

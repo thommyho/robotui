@@ -1,0 +1,375 @@
+[batterySettings]
+batteryLevel = "Batterij-niveau"
+capacity = "{energy} van {total}"
+legendBottomName = "huis heeft prioriteit"
+legendBottomSubline = "niet gebruikt voor opladen"
+legendMiddleName = "eerst voertuig"
+legendMiddleSubline = "dan het huis"
+legendTitle = "Hoe moet zonne-energie gebruikt worden?"
+legendTopAutostart = "start automatisch"
+legendTopName = "batterij-ondersteund opladen"
+legendTopSubline = "zonder onderbrekingen"
+modalTitle = "Batterij-instellingen"
+note = "Opgelet: Deze instellingen beïnvloeden enkel de zonnemodus. Oplaadgedrag wordt overeenkomstig aangepast."
+
+[batterySettings.bufferStart]
+full = "als bijna vol"
+low = "als beetje vol"
+medium = "als half vol"
+never = "enkel bij voldoende overschot"
+
+[footer]
+
+[footer.community]
+greenEnergy = "Zon"
+greenEnergySub1 = "geladen met robotui"
+greenEnergySub2 = "sinds oktober 2022"
+greenShare = "Zonne-deel"
+greenShareSub1 = "stroom geleverd door"
+greenShareSub2 = "zon, en batterij opslag"
+power = "Laadvermogen"
+powerSub1 = "{activeClients} van {totalClients} deelnemers"
+powerSub2 = "laden..."
+tabTitle = "Live community"
+
+[footer.savings]
+footerLong = "{percent}% zonne-energie"
+footerShort = "{percent}% zon"
+modalTitle = "Oplaadenergie-overzicht"
+percentGrid = "{grid} kWh net"
+percentSelf = "{self} kWh zon"
+percentTitle = "Zonne-energie"
+priceFeedIn = "{feedInPrice} injectie"
+priceGrid = "{gridPrice} net"
+priceTitle = "Energieprijs"
+savingsComparedToGrid = "in vergelijking met netafname"
+savingsTitle = "Besparing"
+savingsTotalEnergy = "{total} kWh geladen"
+since = "sinds {since}"
+tabTitle = "Mijn data"
+
+[footer.sponsor]
+becomeSponsor = "Word sponsor"
+confetti = "Klaar voor confetti?"
+confettiPromise = "Je krijgt stickers en digitale confetti"
+sticker = "... of robotui stickers?"
+supportUs = "Onze missie is om van zonne-energie de norm te maken. Help robotui door te betalen wat het u waard is."
+thanks = "Bedankt, {sponsor}! Uw bijdrage helpt robotui verder te ontwikkelen."
+titleNoSponsor = "Sponsor ons"
+titleSponsor = "U bent een sponsor!"
+
+[footer.telemetry]
+optIn = "Ik wil mijn gegevens delen."
+optInMoreDetails = "Meer details {0}."
+optInMoreDetailsLink = "hier"
+optInSponsorship = "Sponsoring nodig."
+
+[footer.version]
+availableLong = "nieuwe versie beschikbaar"
+modalCancel = "Annuleer"
+modalDownload = "Download"
+modalInstalledVersion = "Geïnstalleerde versie"
+modalNoReleaseNotes = "Geen release notes beschikbaar. Meer info over de nieuwe versie:"
+modalTitle = "Nieuwe versie beschikbaar"
+modalUpdate = "Installeren"
+modalUpdateNow = "Nu installeren"
+modalUpdateStarted = "Starten van de nieuwe versie van robotui..."
+modalUpdateStatusStart = "Installatie gestart:"
+
+[gridSettings]
+activeHours = "{charging} van {total}"
+activeHoursLabel = "Actieve uren"
+co2Label = "CO₂ uitstoot"
+co2Limit = "CO₂ limiet"
+costLimitDescription = "Zet tijdelijk snel-laden in solar mode aan"
+modalTitle = "Smart Grid laden"
+none = "geen"
+priceLabel = "Energieprijs"
+priceLimit = "Prijslimiet"
+
+[header]
+about = "Over"
+blog = "Blog"
+docs = "Documentatie"
+github = "GitHub"
+login = "Voertuig logins"
+needHelp = "Hulp nodig?"
+sessions = "Laadsessies"
+settings = "Instellingen"
+
+[header.theme]
+auto = "Design: systeem"
+dark = "Design: donker"
+light = "Design: licht"
+
+[help]
+discussionsButton = "GitHub discussies"
+documentationButton = "Documentatie"
+issueButton = "Een bug melden"
+issueDescription = "Vreemd of fout gedrag gevonden?"
+modalTitle = "Hulp nodig?"
+primaryActions = "Werkt iets niet naar behoren? Er zijn goede plaatsen om hulp te krijgen."
+restartButton = "Herstart"
+restartDescription = "Geprobeerd het uit en terug aan te zetten?"
+secondaryActions = "Nog niet gelukt om je probleem op te lossen? Hier zijn enkele hardhandige opties."
+
+[help.restart]
+cancel = "Annuleren"
+confirm = "Ja, herstarten!"
+description = "Herstarten niet nodig onder normale omstandigheden. Overweeg een bug in te dienen als je robotui geregeld moet herstarten."
+disclaimer = "Nota: robotui zal afsluiten en rekenen op het besturingssysteem om de service te herstarten."
+modalTitle = "Ben je zeker dat je wil herstarten?"
+
+[main]
+vehicles = "Parking"
+
+[main.chargingPlan]
+activeLabel = "{time}"
+arrivalTab = "Aankomst"
+departureTab = "Vertrek"
+modalTitle = "Laad Plan"
+none = "geen"
+title = "Plan"
+titleMinSoc = "Min lading"
+titleTargetCharge = "Vertrek"
+
+[main.energyflow]
+battery = "Batterij"
+batteryCharge = "Batterij opladen"
+batteryDischarge = "Batterij ontladen"
+batteryTooltip = "{energy} van {total} ({soc})"
+gridImport = "Netafname"
+homePower = "Consumptie"
+loadpoints = "Lader| Lader | {count} laders"
+noEnergy = "Geen meter data"
+pvExport = "Netinjectie"
+pvProduction = "Productie"
+selfConsumption = "Zelfverbruik"
+
+[main.loadpoint]
+avgPrice = "⌀ Prijs"
+charged = "Geladen"
+co2 = "⌀ CO₂"
+duration = "Duur"
+fallbackName = "Laadpunt"
+power = "Vermogen"
+price = "Σ Prijs"
+remaining = "Resterend"
+remoteDisabledHard = "{source}: uitgeschakeld"
+remoteDisabledSoft = "{source}: adaptief PV-laden uitgeschakeld"
+solar = "Zon"
+
+[main.loadpointSettings]
+currents = "Laadstroom"
+default = "standaard"
+disclaimerHint = "Let op:"
+disclaimerText = "Wijzigingen gaan verloren als de server herstart."
+title = "Instellingen {0}"
+vehicle = "Voertuig"
+
+[main.loadpointSettings.maxCurrent]
+label = "Max. Stroom"
+
+[main.loadpointSettings.minCurrent]
+label = "Min. Stroom"
+
+[main.loadpointSettings.minSoc]
+description = "Voor noodgevallen. Het voertuig wordt „snel” opgeladen tot {0}% van alle beschikbare zonne-energie, en gaat dan verder met alleen het zonneoverschot."
+label = "Min. lading %"
+
+[main.loadpointSettings.phasesConfigured]
+label = "Fasen"
+phases_0 = "automatisch omschakelen"
+phases_1 = "1 fase"
+phases_1_hint = "({min} tot {max})"
+phases_3 = "3 fase"
+phases_3_hint = "({min} tot {max})"
+
+[main.mode]
+minpv = "Min+PV"
+now = "Snel"
+off = "Uit"
+pv = "PV"
+
+[main.provider]
+login = "log in"
+logout = "afmelden"
+
+[main.targetCharge]
+activate = "Activeren"
+activeLabel = "{time}"
+co2Limit = "CO₂ limiet van {co2}"
+costLimitIgnore = "De geconfigureerde {limit} zal genegeerd worden tijdens deze periode."
+descriptionEnergy = "Tegen wanneer moet {targetEnergy} in het voertuig geladen zijn?"
+descriptionSoc = "Wanneer moet het voertuig geladen zijn naar {targetSoc}%?"
+inactiveLabel = "Ingestelde tijd"
+modalTitle = "Stel tijd in"
+planDuration = "Oplaadtijd"
+planPeriodLabel = "Periode"
+planPeriodValue = "{start} tot {end}"
+planUnknown = "nog niet bekend"
+priceLimit = "prijslimiet van {price}"
+remove = "Verwijder"
+setTargetTime = "geen"
+targetIsInThePast = "Kies een tijd in de toekomst, Marty."
+targetIsTooFarInTheFuture = "We passen het plan aan zodra we meer weten over de toekomst."
+title = "Doeltijd"
+today = "Vandaag"
+tomorrow = "Morgen"
+update = "Updaten"
+
+[main.targetChargePlan]
+chargeDuration = "Oplaadtijd"
+co2Label = "CO₂ emissie ⌀"
+priceLabel = "Energieprijs"
+timeRange = "{day} {range} h"
+unknownPrice = "nog onbekend"
+
+[main.targetEnergy]
+label = "Limiet"
+noLimit = "geen"
+
+[main.vehicle]
+addVehicle = "Voertuig toevoegen"
+changeVehicle = "Wijzig voertuig"
+detectionActive = "Detecteren voertuig bezig..."
+fallbackName = "Voertuig"
+moreActions = "Meer acties"
+none = "Geen voertuig"
+targetSoc = "Limiet"
+unknown = "Gast voertuig"
+vehicleSoc = "Lading"
+
+[main.vehicleSoc]
+charging = "laden"
+connected = "aangesloten"
+disconnected = "niet aangesloten"
+ready = "klaar"
+vehicleTarget = "Voertuiglimiet: {soc}%"
+
+[main.vehicleStatus]
+charging = "Opladen..."
+cheapEnergyCharging = "Goedkope energie beschikbaar. Aan het laden…"
+cleanEnergyCharging = "Groene energie beschikbaar. Aan het laden…"
+climating = "Voor-conditionering gedetecteerd."
+connected = "Verbonden."
+disconnected = "Niet verbonden."
+guard = "Schakelbeveiliging actief voor {remaining}."
+minCharge = "Minimaal opladen naar {soc}%."
+pvDisable = "Onvoldoende PV overschot beschikbaar. Pauzeren over {remaining}..."
+pvEnable = "Voldoende PV overschot beschikbaar. Starten over {remaining}..."
+scale1p = "Wisselen naar laden op 1 fase over {remaining}..."
+scale3p = "Wisselen naar laden op 3 fasen over {remaining}..."
+targetChargeActive = "Doelladen actief..."
+targetChargePlanned = "Doelladen begint om {time}."
+targetChargeWaitForVehicle = "Doellading gereed. Wachten op voertuig..."
+unknown = ""
+vehicleTargetReached = "Voertuiglimiet {soc}% bereikt."
+waitForVehicle = "Klaar. Wachten op voertuig..."
+
+[notifications]
+dismissAll = "Alles verwijderen"
+modalTitle = "Notificaties"
+
+[offline]
+message = "Niet verbonden met een server."
+reload = "Verversen?"
+
+[session]
+cancel = "Annuleer"
+co2 = "CO₂"
+date = "Periode"
+delete = "Verwijder"
+finished = "Afgerond"
+meter = "Meter"
+meterstart = "Meter start"
+meterstop = "Meter stop"
+odometer = "Kilometerstand"
+price = "Prijs"
+started = "Gestart"
+title = "Oplaadsessie"
+
+[sessions]
+avgPrice = "⌀ Prijs"
+co2 = "⌀ CO₂"
+csvMonth = "Download CSV van {month}"
+csvTotal = "Download totale CSV"
+date = "Start"
+downloadCsv = "Download als CSV"
+energy = "Geladen"
+loadpoint = "Oplaadpunt"
+noData = "Geen oplaadsessies deze maand"
+price = "Σ Prijs"
+reallyDelete = "Wilt u deze sessie echt verwijderen?"
+solar = "Zon"
+title = "Oplaadsessies"
+vehicle = "Voertuig"
+
+[sessions.csv]
+chargedenergy = "Energie (kWh)"
+created = "Aangemaakt"
+finished = "Beëindigd"
+identifier = "ID"
+loadpoint = "Oplaadpunt"
+meterstart = "Meter start (kWh)"
+meterstop = "Meter stop (kwh)"
+odometer = "Kilometerstand (km)"
+vehicle = "Voertuig"
+
+[sessions.filter]
+allLoadpoints = "alle oplaadpunten"
+allVehicles = "alle voertuigen"
+filter = "filter"
+
+[settings]
+title = "Instellingen"
+
+[settings.gridDetails]
+co2 = "CO₂"
+label = "Grid detail"
+none = "geen"
+price = "prijs"
+
+[settings.hiddenFeatures]
+label = "Experimenteel"
+value = "Toon experimentele UI functies."
+
+[settings.language]
+auto = "Automatisch"
+label = "Taal"
+
+[settings.sponsorToken]
+expires = "Je sponsortoken vervalt {inXDays}. {getNewToken} en update je configuratiebestand."
+getNew = "Vraag een nieuwe aan"
+hint = "Nota: We zullen dit in de toekomst automatiseren."
+
+[settings.telemetry]
+label = "Telemetrie"
+
+[settings.theme]
+auto = "systeem"
+dark = "donker"
+label = "Ontwerp"
+light = "licht"
+
+[settings.unit]
+km = "km"
+label = "Eenheden"
+mi = "mijlen"
+
+[startupError]
+configFile = "Gebruikt configuratiebestand:"
+configuration = "Configuratie"
+description = "Controleer uw configuratiebestand. Als de foutmelding niet helpt, bekijk dan de {0}."
+discussions = "GitHub Discussies"
+fixAndRestart = "Los het probleem op en herstart de server."
+hint = "Let op: het kan ook zijn dat u een defect toestel heeft (omvormer, meter, …). Controleer uw netwerkverbindingen."
+lineError = "Fout in {0}."
+lineErrorLink = "lijn {0}"
+restartButton = "Herstart"
+title = "Start Error"
+
+[vehicleSettings]
+cancel = "Annuleer"
+template = "Fabrikant"
+test = "Test"

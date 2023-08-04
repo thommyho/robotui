@@ -1,0 +1,14 @@
+template: eebus
+products:
+  - description:
+      de: EEBUS kompatible Wallbox
+      en: EEBUS compatible Wallbox
+group: generic
+capabilities: ["mA"]
+requirements:
+  robotui: ["eebus"]
+params:
+  - preset: eebus
+render: |
+  {{ include "eebus" . }}
+  meter: true

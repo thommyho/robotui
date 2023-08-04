@@ -1,0 +1,378 @@
+[batterySettings]
+batteryLevel = "Kaupiklio įkrova"
+capacity = "{energy} iš {total}"
+legendBottomName = "namo pirmumas"
+legendBottomSubline = "nenaudojama įkrovimui"
+legendMiddleName = "pirmiau automobilis"
+legendMiddleSubline = "namas po to"
+legendTitle = "Kaip naudoti saulės energiją?"
+legendTopAutostart = "startuoja automatiškai"
+legendTopName = "kaupiklis padeda įkrauti"
+legendTopSubline = "be pertraukų"
+modalTitle = "Kaupiklio nustatymai"
+note = "Pastaba: Šie nustatymai paveikia tik įkrovimą Saulė. Įkrovimo algoritmas atitinkamai pakeičiamas."
+
+[batterySettings.bufferStart]
+full = "kai beveik pilnas"
+low = "kai nevisai pilnas"
+medium = "kai puspilnis"
+never = "tik su pakankamu pertekliumi"
+
+[footer]
+
+[footer.community]
+greenEnergy = "Saulės energija"
+greenEnergySub1 = "įkrauta su robotui"
+greenEnergySub2 = "nuo 2022 Spalio"
+greenShare = "Saulės dalis"
+greenShareSub1 = "galios tiekia Saulė ir"
+greenShareSub2 = "energijos kaupikliai"
+power = "Įkrovimo galia"
+powerSub1 = "{activeClients} iš {totalClients} dalyvių"
+powerSub2 = "įkrauna..."
+tabTitle = "Bendruomenės"
+
+[footer.savings]
+footerLong = "{percent}% saulės energija"
+footerShort = "{percent}% saulės"
+modalTitle = "Įkrovimo energijos apžvalga"
+percentGrid = "{grid} kWh tinklo"
+percentSelf = "{self} kWh saulės"
+percentTitle = "Saulės Energija"
+priceFeedIn = "{feedInPrice} eksporto"
+priceGrid = "{gridPrice} tinklo"
+priceTitle = "Energijos Kaina"
+savingsComparedToGrid = "palyginus su tinklu"
+savingsTitle = "Sutaupyta"
+savingsTotalEnergy = "{total} kWh įkrauta"
+since = "nuo {since}"
+tabTitle = "Mano"
+
+[footer.sponsor]
+becomeSponsor = "Tapkite rėmėju"
+confetti = "Norite konfeti?"
+confettiPromise = "Gausite lipdukų ir skaitmeninių konfeti"
+sticker = "… ar robotui lipdukų?"
+supportUs = "Mūsų misija - siekti, kad įkrovimas saulės energija taptų įprastu. Padėkite mums ir paremkite robotui."
+thanks = "Ačiū, {sponsor}! Jūs prisidedate prie robotui vystymo."
+titleNoSponsor = "Paremkite mus"
+titleSponsor = "Remiate projektą"
+
+[footer.telemetry]
+optIn = "Noriu prisidėti savo duomenimis."
+optInMoreDetails = "Daugiau informacijos rasite {0}."
+optInMoreDetailsLink = "čia"
+optInSponsorship = "(Gali tik rėmėjai.)"
+
+[footer.version]
+availableLong = "yra naujesnė versija"
+modalCancel = "Atšaukti"
+modalDownload = "Atsisiųsti"
+modalInstalledVersion = "Instaliuota versija"
+modalNoReleaseNotes = "Naujinimo pastabų nėra. Daugiau informacijos apie naują versiją:"
+modalTitle = "Yra naujesnė versija"
+modalUpdate = "Instaliuoti"
+modalUpdateNow = "Instaliuoti dabar"
+modalUpdateStarted = "Startuoja nauja robotui versija..."
+modalUpdateStatusStart = "Instaliavimas pradėtas:"
+
+[gridSettings]
+activeHours = "{charging} iš {total}"
+activeHoursLabel = "Aktyvumo valandos"
+co2Label = "CO₂ emisijos"
+co2Limit = "CO₂ limitas"
+costLimitDescription = "Laikinai aktyvuoja greitą įkrovimą (režime Saulė)."
+modalTitle = "Išmanaus tinklo įkrovimas"
+none = "nėra"
+priceLabel = "Energijos kaina"
+priceLimit = "Kainos limitas"
+
+[header]
+about = "Apie"
+blog = "Tinklaraštis"
+docs = "Dokumentacija (Vokiečių k.)"
+github = "GitHub"
+login = " Automobilių prisijungimai"
+needHelp = "Reikia pagalbos?"
+sessions = "Įkrovimo sesijos "
+settings = "Nustatymai"
+
+[header.theme]
+auto = "Dizainas: sistemos"
+dark = "Dizainas: tamsus"
+light = "Dizainas: šviesus"
+
+[help]
+discussionsButton = "GitHub diskusijos"
+documentationButton = "Dokumentacija"
+issueButton = "Pranešti apie klaidą"
+issueDescription = "Pastebėjote keistą ar netinkamą veikimą?"
+modalTitle = "Reikia pagalbos?"
+primaryActions = "Kažkas veikia ne taip, kaip turėtų? Pagalbos ieškokite čia."
+restartButton = "Restartuoti"
+restartDescription = "Ar pabandėte išjungti ir vėl įjungti?"
+secondaryActions = "Vis dar nepavyksta išspręsti problemos? Čia rasite drastiškesnes opcijas."
+
+[help.restart]
+cancel = "Atšaukti"
+confirm = "Taip, restartuoti!"
+description = "Įprastai restartavimas neturėtų būti reikalingas. Jei jums vis reikia restartuoti, pasvarstykite, gal derėtų pranešti apie problemą."
+disclaimer = "Pastaba: robotui sustos, ir pasitikės operacinės sistemos pagalba paleidžiant iš naujo."
+modalTitle = "Ar tikrai norite restartuoti?"
+
+[main]
+vehicles = "Autoparkas"
+
+[main.chargingPlan]
+activeLabel = "{time}"
+arrivalTab = "Atvykimas"
+departureTab = "Išvykimas"
+modalTitle = "Įkrovimo planas"
+none = "nėra"
+title = "Planas"
+titleMinSoc = "Minimali įkrova"
+titleTargetCharge = "Išvykimas"
+
+[main.energyflow]
+battery = "Kaupiklis"
+batteryCharge = "Kaupiklis įkraunamas"
+batteryDischarge = "Kaupiklis iškraunamas"
+batteryTooltip = "{energy} iš {total} ({soc})"
+gridImport = "Iš tinklo"
+homePower = "Namo suvartojimas"
+loadpoints = "Įkroviklis | Įkroviklis | {count} įkrovikliai"
+noEnergy = "Nėra skaitiklių duomenų"
+pvExport = "Tinklo eksportas"
+pvProduction = "Gamyba"
+selfConsumption = "Sunaudojama iškart"
+
+[main.loadpoint]
+avgPrice = "⌀ Kaina"
+charged = "Įkrauta"
+co2 = "⌀ CO₂"
+duration = "Trukmė"
+fallbackName = "Įkroviklis"
+power = "Galia"
+price = "Σ Kaina"
+remaining = "Liko"
+remoteDisabledHard = "{source}: išjungtas"
+remoteDisabledSoft = "{source}: adaptyvus Saulės įkrovimas išjungtas"
+solar = "Saulės"
+
+[main.loadpointSettings]
+currents = "Įkrovimo srovė"
+default = "standartiškai"
+disclaimerHint = "Pastaba:"
+disclaimerText = "Šie pakeitimai neišlieka po robotui serverio restarto."
+title = "Nustatymai {0}"
+vehicle = "Automobilis"
+
+[main.loadpointSettings.maxCurrent]
+label = "Max. Srovė"
+
+[main.loadpointSettings.minCurrent]
+label = "Min. Srovė"
+
+[main.loadpointSettings.minSoc]
+description = "Minimali įkrova. Automobilis įkraunamas „Greitai” iki {0}% nustatyme „Saulė”, toliau įkraunamas tik saulės energijos pertekliumi."
+label = "Minimali įkrova %"
+
+[main.loadpointSettings.phasesConfigured]
+label = "Fazės"
+phases_0 = "automatinis perjungimas"
+phases_1 = "1 fazė"
+phases_1_hint = "({min} iki {max})"
+phases_3 = "3 fazės"
+phases_3_hint = "({min} iki {max})"
+
+[main.mode]
+minpv = "Min+Saulė"
+now = "Greitas"
+off = "Stop"
+pv = "Saulė"
+
+[main.provider]
+login = "prisijungti"
+logout = "atsijungti"
+
+[main.targetCharge]
+activate = "Aktyvuoti"
+activeLabel = "{time}"
+co2Limit = "CO₂ riba iš {co2}"
+costLimitIgnore = "Šiuo laikotarpiu sukonfigūruotas {limit} bus ignoruojamas."
+descriptionEnergy = "Iki kada {targetEnergy} turėtų būti įkrauta į automobilį?"
+descriptionSoc = "Kada automobilis turėtų būti įkrautas iki {targetSoc}%?"
+inactiveLabel = "Suplanuotas laikas"
+modalTitle = "Nustatyti įkrovimo pabaigos laiką"
+planDuration = "Įkrovimo laikas"
+planPeriodLabel = "Periodas"
+planPeriodValue = "{start} iki {end}"
+planUnknown = "dar nežinome"
+priceLimit = "kainos limitas {price}"
+remove = "Panaikinti"
+setTargetTime = "nesuplanuotas"
+targetIsInThePast = "Pasirinkite laiką ateityje."
+targetIsTooFarInTheFuture = "Pakoreguosime planą, kai tik gausime naujų duomenų."
+title = "Planinis Įkrovimas"
+today = "šiandien"
+tomorrow = "rytoj"
+update = "Atnaujinti"
+
+[main.targetChargePlan]
+chargeDuration = "Įkrovimo trukmė"
+co2Label = "CO₂ emisijos ⌀"
+priceLabel = "Energijos kaina"
+timeRange = "{day} {range} val"
+unknownPrice = "dar nežinoma"
+
+[main.targetEnergy]
+label = "Limitas"
+noLimit = "nėra"
+
+[main.vehicle]
+addVehicle = "Pridėti automobilį"
+changeVehicle = "Pakeisti automobilį"
+detectionActive = "Bandome atpažinti automobilį ..."
+fallbackName = "Automobilis"
+moreActions = "Daugiau veiksmų"
+none = "Nėra automobilio"
+targetSoc = "Limitas"
+unknown = "Nežinomas automobilis"
+vehicleSoc = "Baterija"
+
+[main.vehicleSoc]
+charging = "vyksta įkrovimas"
+connected = "automobilis prijungtas"
+disconnected = "neprijungtas"
+ready = "leidžiama įkrauti"
+vehicleTarget = "Automobilyje nustatytas limitas: {soc}%"
+
+[main.vehicleStatus]
+charging = "Įkraunama..."
+cheapEnergyCharging = "Energijos kaina žema. Įkraunama…"
+cleanEnergyCharging = "Yra švarios energijos. Įkraunama..."
+climating = "Aptiktas išankstinis kondicionavimas."
+connected = "Prijungtas."
+disconnected = "Neprijungtas."
+guard = "Per dažno junginėjimo apsauga {remaining}…"
+guardDisable = "Pauzė už {remaining}…"
+guardEnable = "Pradedam už {remaining}…"
+minCharge = "Minimalus įkrovimas iki {soc}%."
+pvDisable = "Trūksta saulės. Pauzė už {remaining}..."
+pvEnable = "Saulės užtenka, įkrovimas už {remaining}..."
+scale1p = "Sumažinimas į vienfazį įkrovimą už {remaining}..."
+scale3p = "Padidinimas į trifazį įkrovimą už {remaining}..."
+targetChargeActive = "Planinis įkrovimas aktyvuotas..."
+targetChargePlanned = "Planinis įkrovimas prasidės {time}."
+targetChargeWaitForVehicle = "Planinis įkrovimas leidžiamas. Laukiama automobilio signalo..."
+unknown = ""
+vehicleTargetReached = "Automobilyje nustatytas limitas {soc}% pasiektas."
+waitForVehicle = "Paruošta. Laukiama automobilio..."
+
+[notifications]
+dismissAll = "Išvalyti visus"
+modalTitle = "Pranešimai"
+
+[offline]
+message = "Nėra ryšio su serveriu."
+reload = "Perkrauti?"
+
+[session]
+cancel = "Atšaukti"
+co2 = "CO₂"
+date = "Periodas"
+delete = "Ištrinti"
+finished = "Pabaigta"
+meter = "Skaitiklis"
+meterstart = "Skaitiklis pradžia"
+meterstop = "Skaitiklis pabaiga"
+odometer = "Odometras"
+price = "Kaina"
+started = "Pradėta"
+title = "Įkrovimo sesija"
+
+[sessions]
+avgPrice = "⌀ Kaina"
+co2 = "⌀ CO₂"
+csvMonth = "Atsisiųsti {month} CSV"
+csvTotal = "Atsisiųsti visą CSV"
+date = "Pradžia"
+downloadCsv = "Atsisiųsti CSV failą"
+energy = "Įkrauta"
+loadpoint = "Įkroviklis"
+noData = "Šį mėnesį įkrovimų nebuvo."
+price = "Σ Kaina"
+reallyDelete = "Ar tikrai norite ištrinti šią įkrovimo sesiją?"
+solar = "Saulės"
+title = "Įkrovimo Sesijos"
+total = "Viso"
+vehicle = "Automobilis"
+
+[sessions.csv]
+chargedenergy = "Energija (kWh)"
+created = "Sukurta"
+finished = "Pabaigta"
+identifier = "Identifikatorius"
+loadpoint = "Įkroviklis"
+meterstart = "Skaitiklis pradžia (kWh)"
+meterstop = "Skaitiklis pabaiga (kWh)"
+odometer = "Odometras (km)"
+vehicle = "Automobilis"
+
+[sessions.filter]
+allLoadpoints = "visi įkrovikliai"
+allVehicles = "visi automobiliai"
+filter = "Filtruoti"
+
+[settings]
+title = "Nustatymai"
+
+[settings.gridDetails]
+co2 = "CO₂"
+label = "Tinklas detaliau"
+none = "nėra"
+price = "kaina"
+
+[settings.hiddenFeatures]
+label = "Eksperimentinė"
+value = "Rodyti eksperimentines funkcijas."
+
+[settings.language]
+auto = "Automatiškai"
+label = "Kalba"
+
+[settings.sponsorToken]
+expires = "Jūsų rėmėjo tokenas baigiasi {inXDays}. {getNewToken} ir pakeiskite savo configūracinį failą."
+getNew = "Gaukite naują"
+hint = "Pastaba: ateityje šis procesas bus automatizuotas."
+
+[settings.telemetry]
+label = "Telemetrija"
+
+[settings.theme]
+auto = "sistemos"
+dark = "tamsus"
+label = "Dizainas"
+light = "šviesus"
+
+[settings.unit]
+km = "km"
+label = "Vienetai"
+mi = "mylios"
+
+[startupError]
+configFile = "Naudojamas konfiguracijos failas:"
+configuration = "Konfigūracija"
+description = "Patikrinkite konfigūracijos failą. Jei klaidos žinutė jums nepadėjo, atsakymų ieškokite mūsų {0}."
+discussions = "GitHub Diskusijose"
+fixAndRestart = "Pabandykite Ištaisyti klaidą ir perkrauti serverį."
+hint = "Pastaba: Gali būti, kad neteisingai veikia įrenginiai (inverteris, skaitiklis, ...). Patikrinkite tiklo jungtis."
+lineError = "Klaida čia {0}."
+lineErrorLink = "eilutė {0}"
+restartButton = "Restartuoti"
+title = "Klaida startuojant"
+
+[vehicleSettings]
+cancel = "Atšaukti"
+template = "Gamintojas"
+test = "Testuoti"

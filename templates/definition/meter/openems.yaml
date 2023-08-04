@@ -1,0 +1,46 @@
+template: openems
+products:
+  - brand: OpenEMS
+  - brand: FENECON
+params:
+  - name: usage
+    choice: ["grid", "pv", "battery"]
+    allinone: true
+  - name: host
+  - name: password
+    mask: true
+    default: user
+    advanced: true
+  - name: capacity
+    advanced: true
+render: |
+  type: custom
+  power:
+    source: http
+    {{- if eq .usage "grid" }}
+    uri: http://{{ .host }}/rest/channel/_sum/GridActivePower
+    {{- end }}
+    {{- if eq .usage "pv" }}
+    uri: http://{{ .host }}/rest/channel/_sum/ProductionActivePower
+    {{- end }}
+    {{- if eq .usage "battery" }}
+    uri: http://{{ .host }}/rest/channel/_sum/EssDischargePower
+    {{- end }}
+    auth:
+      type: basic
+      user: x
+      password: {{ .password }}
+    jq: .value
+  {{- if eq .usage "battery" }}
+  soc:
+    source: http
+    uri: http://{{ .host }}/rest/channel/_sum/EssSoc
+    auth:
+      type: basic
+      user: x
+      password: {{ .password }}
+    jq: .value
+  {{- if .capacity }}
+  capacity: {{ .capacity }} # kWh
+  {{- end }}
+  {{- end }}

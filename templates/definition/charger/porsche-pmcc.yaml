@@ -1,0 +1,13 @@
+template: pmcc
+products:
+  - brand: Porsche
+    description:
+      generic: Mobile Charger Connect
+capabilities: ["iso151182", "mA"]
+requirements:
+  robotui: ["eebus"]
+params:
+  - preset: eebus
+render: |
+  {{ include "eebus" . }}
+  meter: true

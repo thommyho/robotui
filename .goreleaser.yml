@@ -1,0 +1,107 @@
+dist: release
+release:
+  github:
+    owner: robotui-io
+    name: robotui
+
+builds:
+  - id: robotui
+    main: main.go
+    flags:
+      - -tags=release
+    ldflags:
+      - -X github.com/thommyho/robotui/server.Version={{ .Version }} -s -w
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm
+      - arm64
+    goarm:
+      - "6"
+    ignore:
+      - goos: windows
+        goarch: arm
+      - goos: windows
+        goarch: arm64
+
+env:
+  - CGO_ENABLED=0
+
+archives:
+  - builds:
+      - robotui
+    format: tar.gz
+    format_overrides:
+      - goos: windows
+        format: zip
+    files:
+      - robotui.dist.yaml
+    name_template: >-
+      {{ .ProjectName }}_{{ .Version }}_{{ if eq .Os "darwin" }}macOS{{ else }}{{ .Os }}{{ end }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}
+
+universal_binaries:
+  - replace: true
+
+checksum:
+  name_template: "checksums.txt"
+
+snapshot:
+  name_template: "{{ .Tag }}-next"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^chore"
+      - "^bump"
+      - "^docs:"
+      - "^test:"
+
+nfpms:
+  - id: default
+    package_name: robotui
+    file_name_template: "{{ .ConventionalFileName }}"
+
+    homepage: https://robotui.io
+    description: EV Charge Controller
+    maintainer: andig <cpuidle@gmx.de>
+    license: MIT
+    vendor: robotui.io
+
+    formats:
+      - deb
+
+    contents:
+      - src: ./packaging/init/robotui.service
+        dst: /lib/systemd/system/robotui.service
+
+    scripts:
+      preinstall: ./packaging/scripts/preinstall.sh
+      postinstall: ./packaging/scripts/postinstall.sh
+      preremove: ./packaging/scripts/preremove.sh
+      postremove: ./packaging/scripts/postremove.sh
+
+brews:
+  - repository:
+      owner: robotui-io
+      name: homebrew-tap
+    commit_author:
+      name: andig
+      email: cpuidle@gmx.de
+    folder: Formula
+    homepage: "https://robotui.io"
+    description: "Sonne tanken ☀️🚘"
+    license: "MIT"
+    test: |
+      system "#{bin}/robotui --version"
+    service: |
+      run [opt_bin/"robotui"]
+      working_dir HOMEBREW_PREFIX
+      keep_alive true
+      log_path var/"log/robotui.log"
+      error_log_path var/"log/robotui.log"

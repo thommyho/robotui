@@ -1,0 +1,69 @@
+template: solaredge-hybrid
+products:
+  - brand: SolarEdge
+    description:
+      generic: Hybrid Inverter
+requirements:
+  description:
+    de: Nur ein System kann und darf auf den Wechselrichter zugreifen!
+    en: Only one system may access the inverter!
+params:
+  - name: usage
+    choice: ["grid", "pv", "battery"]
+    allinone: true
+  - name: modbus
+    choice: ["tcpip", "rs485"]
+    id: 1
+    port: 1502
+  - name: timeout
+  - name: capacity
+    advanced: true
+render: |
+  type: custom
+  power:
+  {{- if eq .usage "grid" }}
+    source: modbus
+    {{- include "modbus" . | indent 2 }}
+    timeout: {{ .timeout }}
+    model: sunspec
+    subdevice: 1 # Metering device
+    value: 203:W
+    scale: -1
+  {{- end }}
+  {{- if eq .usage "pv" }}
+    source: calc
+    add:
+    - source: modbus
+      {{- include "modbus" . | indent 4 }}
+      timeout: {{ .timeout }}
+      model: sunspec
+      value: DCPower
+    - source: modbus
+      {{- include "modbus" . | indent 4 }}
+      timeout: {{ .timeout }}
+      register:
+        address: 62836 # Battery 1 Instantaneous Power
+        type: holding
+        decode: float32s
+  {{- end }}
+  {{- if eq .usage "battery" }}
+    source: modbus
+    {{- include "modbus" . | indent 2 }}
+    timeout: {{ .timeout }}
+    register:
+      address: 62836 # Battery 1 Instantaneous Power
+      type: holding
+      decode: float32s
+    scale: -1
+  soc:
+    source: modbus
+    {{- include "modbus" . | indent 2 }}
+    timeout: {{ .timeout }}
+    register:
+      address: 62852 # Battery 1 State of Energy (SOE)
+      type: holding
+      decode: float32s
+  {{- if .capacity }}
+  capacity: {{ .capacity }} # kWh
+  {{- end }}
+  {{- end }}
