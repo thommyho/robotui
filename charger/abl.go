@@ -23,10 +23,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/modbus"
-	"github.com/evcc-io/evcc/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/modbus"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/api"
 )
 
 // ABLeMH charger implementation
@@ -57,7 +57,7 @@ var ablStatus = map[byte]string{
 	0xC4: "C2, reduced current (imbalance F15)",
 	0xE0: "Outlet disabled",
 	0xE1: "Production test",
-	0xE2: "EVCC setup mode",
+	0xE2: "robotui setup mode",
 	0xE3: "Bus idle",
 	0xF1: "Unintended closed contact (Welding)",
 	0xF2: "Internal error",

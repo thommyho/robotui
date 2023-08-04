@@ -2,7 +2,7 @@
 
 package server
 
-import "github.com/evcc-io/evcc/core/site"
+import "github.com/thommyho/robotui/core/site"
 
 // HealthListener attaches listener to unix domain socket
 func HealthListener(_ site.API) {

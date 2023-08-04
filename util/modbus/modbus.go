@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
 	"github.com/grid-x/modbus"
+	"github.com/thommyho/robotui/util"
 	"github.com/volkszaehler/mbmd/encoding"
 	"github.com/volkszaehler/mbmd/meters"
 	"github.com/volkszaehler/mbmd/meters/rs485"
@@ -30,7 +30,7 @@ const (
 
 // Settings contains the ModBus TCP settings
 // RTU field is included for compatibility with modbus.tpl which renders rtu: false for TCP
-// TODO remove RTU field (https://github.com/evcc-io/evcc/issues/3360)
+// TODO remove RTU field (https://github.com/robotuimyhorobotuiotui/issues/3360)
 type TcpSettings struct {
 	URI string
 	ID  uint8

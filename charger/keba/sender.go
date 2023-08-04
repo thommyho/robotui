@@ -5,7 +5,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/evcc-io/evcc/util"
+	"github.com/thommyho/robotui/util"
 )
 
 // Sender is a KEBA UDP sender

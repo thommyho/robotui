@@ -5,13 +5,13 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/evcc-io/evcc/core/site"
-	"github.com/evcc-io/evcc/server/assets"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/telemetry"
 	"github.com/go-http-utils/etag"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
+	"github.com/robotuimyhorobotuiotui/server/assets"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/telemetry"
+	"github.com/thommyho/robotui/core/site"
 )
 
 type route struct {

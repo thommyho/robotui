@@ -3,9 +3,9 @@ package prioritizer
 import (
 	"testing"
 
-	"github.com/evcc-io/evcc/core/loadpoint"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
+	"github.com/thommyho/robotui/core/loadpoint"
 )
 
 func TestPrioritzer(t *testing.T) {

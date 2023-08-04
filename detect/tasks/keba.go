@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/evcc-io/evcc/charger/keba"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/charger/keba"
 )
 
 const Keba TaskType = "keba"

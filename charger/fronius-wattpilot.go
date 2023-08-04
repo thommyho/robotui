@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
 	wattpilot "github.com/mabunixda/wattpilot"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 // Wattpilot charger implementation

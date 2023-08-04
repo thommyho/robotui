@@ -28,7 +28,7 @@ type Tokens struct {
 // Error validates the token and returns an error if they are incomplete
 func (t *Tokens) Error() error {
 	if t.Access == "" || t.Refresh == "" {
-		return errors.New("missing access and/or refresh token, use `evcc token` to create")
+		return errors.New("missing access and/or refresh token, use `robotui token` to create")
 	}
 
 	return nil

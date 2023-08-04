@@ -5,8 +5,8 @@ import (
 	"os"
 	"text/tabwriter"
 
-	"github.com/evcc-io/evcc/tariff"
 	"github.com/spf13/cobra"
+	"github.com/thommyho/robotui/tariff"
 )
 
 // tariffCmd represents the vehicle command

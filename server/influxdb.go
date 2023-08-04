@@ -9,11 +9,11 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/evcc-io/evcc/core/site"
-	"github.com/evcc-io/evcc/util"
 	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
 	"github.com/influxdata/influxdb-client-go/v2/api/write"
 	influxlog "github.com/influxdata/influxdb-client-go/v2/log"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/core/site"
 )
 
 // InfluxConfig is the influx db configuration

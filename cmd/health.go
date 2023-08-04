@@ -8,12 +8,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/evcc-io/evcc/server"
 	"github.com/spf13/cobra"
+	"github.com/thommyho/robotui/server"
 	"github.com/tv42/httpunix"
 )
 
-const serviceName = "evcc"
+const serviceName = "robotui"
 
 // healthCmd represents the meter command
 var healthCmd = &cobra.Command{

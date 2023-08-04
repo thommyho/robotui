@@ -11,12 +11,12 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/loadpoint"
-	"github.com/evcc-io/evcc/core/site"
-	"github.com/evcc-io/evcc/server/assets"
-	"github.com/evcc-io/evcc/util"
 	"github.com/gorilla/mux"
+	"github.com/robotuimyhorobotuiotui/core/loadpoint"
+	"github.com/robotuimyhorobotuiotui/core/site"
+	"github.com/robotuimyhorobotuiotui/server/assets"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 var ignoreState = []string{"releaseNotes"} // excessive size
@@ -33,7 +33,7 @@ func indexHandler() http.HandlerFunc {
 			return
 		}
 
-		t, err := template.New("evcc").Delims("[[", "]]").Parse(string(indexTemplate))
+		t, err := template.New("robotui").Delims("[[", "]]").Parse(string(indexTemplate))
 		if err != nil {
 			log.FATAL.Fatal("httpd: failed to create main page template:", err.Error())
 		}

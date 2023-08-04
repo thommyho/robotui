@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/coreos/go-oidc/v3/oidc"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/oauth"
-	"github.com/evcc-io/evcc/util/request"
+	"github.com/robotuimyhorobotuiotui/util/oauth"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/oauth2"
 )
 

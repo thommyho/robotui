@@ -1,8 +1,8 @@
 package coordinator
 
 import (
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/loadpoint"
+	"github.com/robotuimyhorobotuiotui/core/loadpoint"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/exp/slices"
 )
 

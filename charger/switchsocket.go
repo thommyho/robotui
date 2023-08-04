@@ -1,6 +1,6 @@
 package charger
 
-import "github.com/evcc-io/evcc/api"
+import "github.com/thommyho/robotui/api"
 
 // switchSocket implements the api.Charger Status and CurrentPower methods
 // using basic generic switch socket functions

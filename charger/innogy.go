@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/modbus"
-	"github.com/evcc-io/evcc/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/modbus"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/api"
 )
 
 const (
@@ -168,7 +168,7 @@ var _ api.Meter = (*Innogy)(nil)
 
 // CurrentPower implements the api.Meter interface
 func (wb *Innogy) CurrentPower() (float64, error) {
-	// https://github.com/evcc-io/evcc/issues/6848
+	// https://github.com/robotuimyhorobotuiotui/issues/6848
 	if status, err := wb.Status(); status != api.StatusC || err != nil {
 		return 0, err
 	}

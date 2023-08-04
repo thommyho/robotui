@@ -3,8 +3,8 @@ package meter
 import (
 	"testing"
 
-	"github.com/evcc-io/evcc/util/templates"
-	"github.com/evcc-io/evcc/util/test"
+	"github.com/robotuimyhorobotuiotui/util/test"
+	"github.com/thommyho/robotui/util/templates"
 )
 
 var acceptable = []string{

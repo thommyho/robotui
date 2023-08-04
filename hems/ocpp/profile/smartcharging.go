@@ -1,8 +1,8 @@
 package profile
 
 import (
-	"github.com/evcc-io/evcc/util"
 	sc "github.com/lorenzodonini/ocpp-go/ocpp1.6/smartcharging"
+	"github.com/thommyho/robotui/util"
 )
 
 type SmartCharging struct {

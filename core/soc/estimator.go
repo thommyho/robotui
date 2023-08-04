@@ -5,8 +5,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 const ChargeEfficiency = 0.9 // assume charge 90% efficiency

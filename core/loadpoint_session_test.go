@@ -5,13 +5,13 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/evcc-io/evcc/api"
-	coredb "github.com/evcc-io/evcc/core/db"
-	"github.com/evcc-io/evcc/mock"
-	serverdb "github.com/evcc-io/evcc/server/db"
-	"github.com/evcc-io/evcc/util"
 	"github.com/golang/mock/gomock"
+	coredb "github.com/robotuimyhorobotuiotui/core/db"
+	"github.com/robotuimyhorobotuiotui/mock"
+	serverdb "github.com/robotuimyhorobotuiotui/server/db"
+	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/stretchr/testify/assert"
+	"github.com/thommyho/robotui/api"
 )
 
 func TestSession(t *testing.T) {

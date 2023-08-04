@@ -3,7 +3,7 @@ package planner
 import (
 	"time"
 
-	"github.com/evcc-io/evcc/api"
+	"github.com/thommyho/robotui/api"
 )
 
 func Start(plan api.Rates) time.Time {

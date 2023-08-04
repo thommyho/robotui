@@ -3,11 +3,11 @@ package smart
 import (
 	"fmt"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/transport"
-	"github.com/evcc-io/evcc/vehicle/mb"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/transport"
+	"github.com/robotuimyhorobotuiotui/vehicle/mb"
 	"github.com/samber/lo"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/oauth2"
 )
 

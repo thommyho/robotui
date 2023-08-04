@@ -5,10 +5,10 @@ import (
 	"sort"
 
 	"github.com/benbjohnson/clock"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/tariff/fixed"
-	"github.com/evcc-io/evcc/util"
 	"github.com/golang-module/carbon/v2"
+	"github.com/robotuimyhorobotuiotui/tariff/fixed"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 type Fixed struct {

@@ -30,7 +30,7 @@ func (t *Tee) add(out chan<- Param) {
 func (t *Tee) Run(in <-chan Param) {
 	for msg := range in {
 		for _, recv := range t.recv {
-			// dereference pointers (https://github.com/evcc-io/evcc/issues/7895)
+			// dereference pointers (https://github.com/thommyho/robotui/issues/7895)
 			if val := reflect.ValueOf(msg.Val); val.Kind() == reflect.Ptr {
 				if ptr := reflect.Indirect(val); ptr.IsValid() {
 					msg.Val = ptr.Addr().Elem().Interface()

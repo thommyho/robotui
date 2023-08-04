@@ -9,7 +9,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
+	"github.com/thommyho/robotui/util"
 )
 
 // Connection is the TP-Link connection

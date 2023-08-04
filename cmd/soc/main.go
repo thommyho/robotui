@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/sponsor"
-	"github.com/evcc-io/evcc/vehicle"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/vehicle"
+	"github.com/thommyho/robotui/api"
 )
 
 func usage() {

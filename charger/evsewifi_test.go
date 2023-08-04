@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/evcc-io/evcc/api"
+	"github.com/thommyho/robotui/api"
 )
 
 func TestEvseWifi(t *testing.T) {

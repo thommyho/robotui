@@ -5,10 +5,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/evcc-io/evcc/provider/mqtt"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/sponsor"
-	"github.com/evcc-io/evcc/util/templates"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/util/templates"
+	"github.com/thommyho/robotui/provider/mqtt"
 	stripmd "github.com/writeas/go-strip-markdown/v2"
 	"golang.org/x/exp/slices"
 	"gopkg.in/yaml.v3"
@@ -132,14 +132,14 @@ func (c *CmdConfigure) processDeviceRequirements(templateItem templates.Template
 	}
 
 	// check if sponsorship is required
-	if slices.Contains(templateItem.Requirements.EVCC, templates.RequirementSponsorship) && c.configuration.config.SponsorToken == "" {
+	if slices.Contains(templateItem.Requirements.robotui, templates.RequirementSponsorship) && c.configuration.config.SponsorToken == "" {
 		if err := c.askSponsortoken(true, false); err != nil {
 			return err
 		}
 	}
 
 	// check if we need to setup an MQTT broker
-	if slices.Contains(templateItem.Requirements.EVCC, templates.RequirementMQTT) {
+	if slices.Contains(templateItem.Requirements.robotui, templates.RequirementMQTT) {
 		if c.configuration.config.MQTT == "" {
 			mqttConfig, err := c.configureMQTT(templateItem)
 			if err != nil {
@@ -156,7 +156,7 @@ func (c *CmdConfigure) processDeviceRequirements(templateItem templates.Template
 	}
 
 	// check if we need to setup an EEBUS HEMS
-	if slices.Contains(templateItem.Requirements.EVCC, templates.RequirementEEBUS) {
+	if slices.Contains(templateItem.Requirements.robotui, templates.RequirementEEBUS) {
 		if c.configuration.config.EEBUS == "" {
 			fmt.Println()
 			fmt.Println("-- EEBUS -----------------------------------")
@@ -203,7 +203,7 @@ func (c *CmdConfigure) processParamRequirements(param templates.Param) error {
 	}
 
 	// check if sponsorship is required
-	if slices.Contains(param.Requirements.EVCC, templates.RequirementSponsorship) && c.configuration.config.SponsorToken == "" {
+	if slices.Contains(param.Requirements.robotui, templates.RequirementSponsorship) && c.configuration.config.SponsorToken == "" {
 		if err := c.askSponsortoken(true, true); err != nil {
 			return err
 		}
@@ -369,7 +369,7 @@ func (c *CmdConfigure) paramChoiceValues(params []templates.Param, name string) 
 	return choices
 }
 
-// processConfig processes an EVCC configuration item
+// processConfig processes an robotui configuration item
 // Returns a map with param name and values
 func (c *CmdConfigure) processConfig(templateItem *templates.Template, deviceCategory DeviceCategory) map[string]interface{} {
 	fmt.Println()
@@ -459,7 +459,7 @@ func (c *CmdConfigure) processInputConfig(param templates.Param) string {
 	}
 
 	help := param.Help.ShortString(c.lang)
-	if slices.Contains(param.Requirements.EVCC, templates.RequirementSponsorship) {
+	if slices.Contains(param.Requirements.robotui, templates.RequirementSponsorship) {
 		help = fmt.Sprintf("%s\n\n%s", help, c.localizedString("Requirements_Sponsorship_Feature_Title"))
 	}
 

@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff/v4"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/tariff/awattar"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
+	"github.com/robotuimyhorobotuiotui/tariff/awattar"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/exp/slices"
 )
 

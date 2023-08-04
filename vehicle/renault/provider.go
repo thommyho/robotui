@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/vehicle/renault/kamereon"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/vehicle/renault/kamereon"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/exp/slices"
 )
 

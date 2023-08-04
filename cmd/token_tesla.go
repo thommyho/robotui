@@ -9,9 +9,9 @@ import (
 	"strings"
 
 	"github.com/bogosj/tesla"
-	"github.com/evcc-io/evcc/util/request"
 	"github.com/manifoldco/promptui"
 	"github.com/skratchdot/open-golang/open"
+	"github.com/thommyho/robotui/util/request"
 	"golang.org/x/oauth2"
 )
 
@@ -81,7 +81,7 @@ func codePrompt(ctx context.Context, devices []tesla.Device) (tesla.Device, stri
 }
 
 func captchaPrompt(ctx context.Context, svg io.Reader) (string, error) {
-	tmpFile, err := os.CreateTemp(os.TempDir(), "evcc-*.svg")
+	tmpFile, err := os.CreateTemp(os.TempDir(), "robotui-*.svg")
 	if err != nil {
 		return "", fmt.Errorf("cannot create temp file: %w", err)
 	}

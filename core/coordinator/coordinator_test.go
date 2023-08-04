@@ -3,11 +3,11 @@ package coordinator
 import (
 	"testing"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/loadpoint"
-	"github.com/evcc-io/evcc/mock"
-	"github.com/evcc-io/evcc/util"
 	"github.com/golang/mock/gomock"
+	"github.com/robotuimyhorobotuiotui/core/loadpoint"
+	"github.com/robotuimyhorobotuiotui/mock"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 func TestVehicleDetectByStatus(t *testing.T) {

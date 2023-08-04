@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/evcc-io/evcc/server/db/settings"
-	"github.com/evcc-io/evcc/tariff"
+	"github.com/robotuimyhorobotuiotui/tariff"
+	"github.com/thommyho/robotui/server/db/settings"
 )
 
 const (

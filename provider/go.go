@@ -3,8 +3,8 @@ package provider
 import (
 	"fmt"
 
-	"github.com/evcc-io/evcc/provider/golang"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/provider/golang"
 	"github.com/traefik/yaegi/interp"
 )
 

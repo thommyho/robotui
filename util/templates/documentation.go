@@ -83,7 +83,7 @@ func (t *Template) RenderDocumentation(product Product, lang string) ([]byte, er
 		"ProductDescription":     product.Description.String(lang),
 		"ProductGroup":           t.GroupTitle(lang),
 		"Capabilities":           t.Capabilities,
-		"Requirements":           t.Requirements.EVCC,
+		"Requirements":           t.Requirements.robotui,
 		"RequirementDescription": t.Requirements.Description.String(lang),
 		"Params":                 filteredParams,
 		"AdvancedParams":         hasAdvancedParams,

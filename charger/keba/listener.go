@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/evcc-io/evcc/util"
+	"github.com/thommyho/robotui/util"
 )
 
 const (

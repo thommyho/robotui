@@ -1,9 +1,9 @@
 package meter
 
 import (
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/meter/tapo"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/meter/tapo"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 // TP-Link Tapo meter implementation

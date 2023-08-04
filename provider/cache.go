@@ -8,8 +8,8 @@ import (
 
 	"github.com/asaskevich/EventBus"
 	"github.com/benbjohnson/clock"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 var (

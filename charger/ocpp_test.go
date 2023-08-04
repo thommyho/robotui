@@ -5,12 +5,12 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/evcc-io/evcc/charger/ocpp"
 	ocpp16 "github.com/lorenzodonini/ocpp-go/ocpp1.6"
 	"github.com/lorenzodonini/ocpp-go/ocpp1.6/core"
 	"github.com/lorenzodonini/ocpp-go/ocpp1.6/remotetrigger"
 	"github.com/lorenzodonini/ocpp-go/ocpp1.6/types"
 	"github.com/stretchr/testify/suite"
+	"github.com/thommyho/robotui/charger/ocpp"
 )
 
 const (
@@ -56,7 +56,7 @@ func (suite *ocppTestSuite) SetupSuite() {
 func (suite *ocppTestSuite) handleTrigger(msg remotetrigger.MessageTrigger) {
 	switch msg {
 	case core.BootNotificationFeatureName:
-		if res, err := suite.cp.BootNotification("demo", "evcc"); err != nil {
+		if res, err := suite.cp.BootNotification("demo", "robotui"); err != nil {
 			suite.T().Log("BootNotification:", err)
 		} else {
 			suite.T().Log("BootNotification:", res)

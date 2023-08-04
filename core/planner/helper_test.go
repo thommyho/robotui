@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/evcc-io/evcc/api"
 	"github.com/stretchr/testify/require"
+	"github.com/thommyho/robotui/api"
 )
 
 func TestSlotHasSuccessor(t *testing.T) {

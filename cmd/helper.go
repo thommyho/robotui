@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/evcc-io/evcc/cmd/shutdown"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/spf13/viper"
+	"github.com/thommyho/robotui/cmd/shutdown"
 )
 
 // parseLogLevels parses --log area:level[,...] switch into levels per log area
@@ -110,12 +110,12 @@ func wrapErrors(err error) error {
 		switch {
 		case errors.As(err, &opErr):
 			if opErr.Op == "listen" && strings.Contains(opErr.Error(), "address already in use") {
-				err = fmt.Errorf("could not open port- check that evcc is not already running (%w)", err)
+				err = fmt.Errorf("could not open port- check that robotui is not already running (%w)", err)
 			}
 
 		case errors.As(err, &pathErr):
 			if pathErr.Op == "remove" && strings.Contains(pathErr.Error(), "operation not permitted") {
-				err = fmt.Errorf("could not remove file- check that evcc is not already running (%w)", err)
+				err = fmt.Errorf("could not remove file- check that robotui is not already running (%w)", err)
 			}
 		}
 	}

@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util/locale"
 	"github.com/fatih/structs"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
+	"github.com/robotuimyhorobotuiotui/util/locale"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 	"golang.org/x/text/number"

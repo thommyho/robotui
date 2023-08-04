@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/meter/tasmota"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/meter/tasmota"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 // Tasmota project homepage

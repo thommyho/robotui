@@ -6,16 +6,16 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/evcc-io/evcc/cmd/configure"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/thommyho/robotui/cmd/configure"
 )
 
 // configureCmd represents the configure command
 var configureCmd = &cobra.Command{
 	Use:   "configure",
-	Short: "Create configuration (evcc.yaml)",
+	Short: "Create configuration (robotui.yaml)",
 	Run:   runConfigure,
 }
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/provider"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/thommyho/robotui/api"
 )
 
 // Provider implements the vehicle api

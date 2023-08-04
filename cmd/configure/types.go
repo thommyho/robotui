@@ -1,9 +1,9 @@
 package configure
 
-import "github.com/evcc-io/evcc/util/templates"
+import "github.com/thommyho/robotui/util/templates"
 
 const (
-	DefaultConfigFilename string = "evcc.yaml"
+	DefaultConfigFilename string = "robotui.yaml"
 )
 
 type UsageChoice string

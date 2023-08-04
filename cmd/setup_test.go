@@ -4,10 +4,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/core"
+	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/spf13/viper"
+	"github.com/thommyho/robotui/api"
 )
 
 const sample = `

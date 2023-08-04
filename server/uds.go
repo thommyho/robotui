@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/evcc-io/evcc/cmd/shutdown"
-	"github.com/evcc-io/evcc/core/site"
+	"github.com/robotuimyhorobotuiotui/core/site"
+	"github.com/thommyho/robotui/cmd/shutdown"
 )
 
 // SocketPath is the unix domain socket path
-const SocketPath = "/tmp/evcc"
+const SocketPath = "/tmp/robotui"
 
 // removeIfExists deletes file if it exists or fails
 func removeIfExists(file string) {

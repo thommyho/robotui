@@ -3,8 +3,8 @@ package core
 import (
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/planner"
+	"github.com/robotuimyhorobotuiotui/core/planner"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/exp/slices"
 )
 

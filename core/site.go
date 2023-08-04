@@ -8,19 +8,19 @@ import (
 	"time"
 
 	"github.com/avast/retry-go/v4"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/cmd/shutdown"
-	"github.com/evcc-io/evcc/core/coordinator"
-	"github.com/evcc-io/evcc/core/db"
-	"github.com/evcc-io/evcc/core/loadpoint"
-	"github.com/evcc-io/evcc/core/planner"
-	"github.com/evcc-io/evcc/core/prioritizer"
-	"github.com/evcc-io/evcc/push"
-	serverdb "github.com/evcc-io/evcc/server/db"
-	"github.com/evcc-io/evcc/server/db/settings"
-	"github.com/evcc-io/evcc/tariff"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/telemetry"
+	"github.com/robotuimyhorobotuiotui/cmd/shutdown"
+	"github.com/robotuimyhorobotuiotui/core/coordinator"
+	"github.com/robotuimyhorobotuiotui/core/db"
+	"github.com/robotuimyhorobotuiotui/core/loadpoint"
+	"github.com/robotuimyhorobotuiotui/core/planner"
+	"github.com/robotuimyhorobotuiotui/core/prioritizer"
+	"github.com/robotuimyhorobotuiotui/push"
+	serverdb "github.com/robotuimyhorobotuiotui/server/db"
+	"github.com/robotuimyhorobotuiotui/server/db/settings"
+	"github.com/robotuimyhorobotuiotui/tariff"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/telemetry"
+	"github.com/thommyho/robotui/api"
 )
 
 const standbyPower = 10 // consider less than 10W as charger in standby
@@ -838,7 +838,7 @@ func (site *Site) Run(stopC chan struct{}, interval time.Duration) {
 	site.Health = NewHealth(time.Minute + interval)
 
 	if max := 30 * time.Second; interval < max {
-		site.log.WARN.Printf("interval <%.0fs can lead to unexpected behavior, see https://docs.evcc.io/docs/reference/configuration/interval", max.Seconds())
+		site.log.WARN.Printf("interval <%.0fs can lead to unexpected behavior, see https://docs.robotui.io/docs/reference/configuration/interval", max.Seconds())
 	}
 
 	loadpointChan := make(chan Updater)

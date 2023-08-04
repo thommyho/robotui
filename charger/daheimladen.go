@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/charger/daheimladen"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
+	"github.com/robotuimyhorobotuiotui/charger/daheimladen"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/oauth2"
 )
 
@@ -54,7 +54,7 @@ func NewDaheimLaden(token, stationID string, cache time.Duration) (*DaheimLaden,
 		Helper:      request.NewHelper(util.NewLogger("daheim")),
 		stationID:   stationID,
 		connectorID: 1,
-		idTag:       daheimladen.EVCC_IDTAG,
+		idTag:       daheimladen.robotui_IDTAG,
 		token:       token,
 		cache:       cache,
 	}

@@ -1,9 +1,9 @@
 package meter
 
 import (
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/meter/shelly"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/meter/shelly"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 // Shelly meter implementation

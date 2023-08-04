@@ -8,10 +8,10 @@ import (
 	"net/url"
 
 	"github.com/coreos/go-oidc/v3/oidc"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/server/oauth2redirect"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/server/oauth2redirect"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/oauth2"
 )
 

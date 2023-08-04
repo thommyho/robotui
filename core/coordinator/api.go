@@ -1,6 +1,6 @@
 package coordinator
 
-import "github.com/evcc-io/evcc/api"
+import "github.com/thommyho/robotui/api"
 
 // API is the coordinator API
 type API interface {

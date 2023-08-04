@@ -29,10 +29,10 @@ import (
 	"math"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/modbus"
-	"github.com/evcc-io/evcc/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/modbus"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/api"
 )
 
 // BenderCC charger implementation
@@ -55,7 +55,7 @@ const (
 	bendRegChargedEnergy          = 716  // Sum of charged energy for the current session (Wh)
 	bendRegChargingDuration       = 718  // Duration since beginning of charge (Seconds)
 	bendRegUserID                 = 720  // User ID (OCPP IdTag) from the current session. Bytes 0 to 19.
-	bendRegEVCCID                 = 741  // ASCII representation of the Hex. Values corresponding to the EVCCID. Bytes 0 to 11.
+	bendRegrobotuiID              = 741  // ASCII representation of the Hex. Values corresponding to the robotuiID. Bytes 0 to 11.
 	bendRegHemsCurrentLimit       = 1000 // Current limit of the HEMS module (A)
 
 	bendRegFirmware             = 100 // Application version number
@@ -315,7 +315,7 @@ func (wb *BenderCC) identify() (string, error) {
 	if !wb.legacy {
 		b, err := wb.conn.ReadHoldingRegisters(bendRegSmartVehicleDetected, 1)
 		if err == nil && binary.BigEndian.Uint16(b) != 0 {
-			b, err = wb.conn.ReadHoldingRegisters(bendRegEVCCID, 6)
+			b, err = wb.conn.ReadHoldingRegisters(bendRegrobotuiID, 6)
 		}
 
 		if id := bytesAsString(b); id != "" || err != nil {
@@ -355,8 +355,8 @@ func (wb *BenderCC) Diagnose() {
 			fmt.Printf("\tSmart Vehicle:\t%t\n", binary.BigEndian.Uint16(b) != 0)
 		}
 	}
-	if b, err := wb.conn.ReadHoldingRegisters(bendRegEVCCID, 6); err == nil {
-		fmt.Printf("\tEVCCID:\t%s\n", b)
+	if b, err := wb.conn.ReadHoldingRegisters(bendRegrobotuiID, 6); err == nil {
+		fmt.Printf("\trobotuiID:\t%s\n", b)
 	}
 	if b, err := wb.conn.ReadHoldingRegisters(bendRegUserID, 10); err == nil {
 		fmt.Printf("\tUserID:\t%s\n", b)

@@ -8,7 +8,7 @@ import (
 	"text/template"
 
 	"github.com/Masterminds/sprig/v3"
-	"github.com/evcc-io/evcc/util"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/exp/slices"
 )
 
@@ -45,7 +45,7 @@ func (t *Template) Validate() error {
 		}
 	}
 
-	for _, r := range t.Requirements.EVCC {
+	for _, r := range t.Requirements.robotui {
 		if !slices.Contains(ValidRequirements, r) {
 			return fmt.Errorf("invalid requirement '%s' in template %s", r, t.Template)
 		}

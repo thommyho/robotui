@@ -21,10 +21,10 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/modbus"
-	"github.com/evcc-io/evcc/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/modbus"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/api"
 )
 
 // Weidmüller charger implementation
@@ -35,15 +35,15 @@ type Weidmüller struct {
 }
 
 const (
-	wmRegCarStatus    = 301  // GD_ID_EVCC_CAR_STATE CHAR
-	wmRegEvccStatus   = 302  // GD_ID_EVCC_EVSE_STATE UINT16
-	wmRegPhases       = 317  // GD_ID_EVCC_PHASES UINT16
-	wmRegVoltages     = 400  // GD_ID_CM_VOLTAGE_PHASE UINT32
-	wmRegCurrents     = 406  // GD_ID_CM_CURRENT_PHASE UINT32
-	wmRegActivePower  = 418  // GD_ID_CM_ACTIVE_POWER UINT32
-	wmRegTotalEnergy  = 457  // GD_ID_CM_CONSUMED_ENERGY_TOTAL_WH UINT64
-	wmRegCurrentLimit = 702  // GD_ID_AUT_USER_CURRENT_LIMIT UINT16
-	wmRegCardId       = 1000 // GD_ID_RFID_TAG_UID CHAR[21]
+	wmRegCarStatus     = 301  // GD_ID_robotui_CAR_STATE CHAR
+	wmRegrobotuiStatus = 302  // GD_ID_robotui_EVSE_STATE UINT16
+	wmRegPhases        = 317  // GD_ID_robotui_PHASES UINT16
+	wmRegVoltages      = 400  // GD_ID_CM_VOLTAGE_PHASE UINT32
+	wmRegCurrents      = 406  // GD_ID_CM_CURRENT_PHASE UINT32
+	wmRegActivePower   = 418  // GD_ID_CM_ACTIVE_POWER UINT32
+	wmRegTotalEnergy   = 457  // GD_ID_CM_CONSUMED_ENERGY_TOTAL_WH UINT64
+	wmRegCurrentLimit  = 702  // GD_ID_AUT_USER_CURRENT_LIMIT UINT16
+	wmRegCardId        = 1000 // GD_ID_RFID_TAG_UID CHAR[21]
 )
 
 func init() {

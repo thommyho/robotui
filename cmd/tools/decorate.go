@@ -102,7 +102,7 @@ func generate(out io.Writer, packageName, functionName, baseType string, dynamic
 		Types               map[string]typeStruct
 		Combinations        [][]string
 	}{
-		API:          "github.com/evcc-io/evcc/api",
+		API:          "github.com/thommyho/robotui/api",
 		Package:      packageName,
 		Function:     functionName,
 		BaseType:     baseType,

@@ -3,9 +3,9 @@ package meter
 import (
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/meter/homewizard"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/meter/homewizard"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 // HomeWizard meter implementation

@@ -3,9 +3,9 @@ package core
 import (
 	"errors"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/site"
-	"github.com/evcc-io/evcc/server/db/settings"
+	"github.com/robotuimyhorobotuiotui/core/site"
+	"github.com/robotuimyhorobotuiotui/server/db/settings"
+	"github.com/thommyho/robotui/api"
 )
 
 var _ site.API = (*Site)(nil)

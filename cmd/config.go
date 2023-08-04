@@ -13,19 +13,19 @@ import (
 	"time"
 
 	"github.com/dustin/go-humanize"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/charger"
-	"github.com/evcc-io/evcc/meter"
-	"github.com/evcc-io/evcc/provider/mqtt"
-	"github.com/evcc-io/evcc/push"
-	"github.com/evcc-io/evcc/server"
-	"github.com/evcc-io/evcc/server/oauth2redirect"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/modbus"
-	"github.com/evcc-io/evcc/vehicle"
-	"github.com/evcc-io/evcc/vehicle/wrapper"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
+	"github.com/robotuimyhorobotuiotui/charger"
+	"github.com/robotuimyhorobotuiotui/meter"
+	"github.com/robotuimyhorobotuiotui/provider/mqtt"
+	"github.com/robotuimyhorobotuiotui/push"
+	"github.com/robotuimyhorobotuiotui/server"
+	"github.com/robotuimyhorobotuiotui/server/oauth2redirect"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/modbus"
+	"github.com/robotuimyhorobotuiotui/vehicle"
+	"github.com/robotuimyhorobotuiotui/vehicle/wrapper"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/exp/maps"
 	"golang.org/x/sync/errgroup"
 )
@@ -35,15 +35,15 @@ var conf = config{
 	Log:      "info",
 	Network: networkConfig{
 		Schema: "http",
-		Host:   "evcc.local",
+		Host:   "robotui.local",
 		Port:   7070,
 	},
 	Mqtt: mqttConfig{
-		Topic: "evcc",
+		Topic: "robotui",
 	},
 	Database: dbConfig{
 		Type: "sqlite",
-		Dsn:  "~/.evcc/evcc.db",
+		Dsn:  "~/.robotui/robotui.db",
 	},
 }
 
@@ -157,7 +157,7 @@ func (cp *ConfigProvider) TrackVisitors() {
 // Meter provides meters by name
 func (cp *ConfigProvider) Meter(name string) (api.Meter, error) {
 	if meter, ok := cp.meters[name]; ok {
-		// track duplicate usage https://github.com/evcc-io/evcc/issues/1744
+		// track duplicate usage https://github.com/robotuimyhorobotuiotui/issues/1744
 		if cp.visited != nil {
 			if _, ok := cp.visited[name]; ok {
 				log.FATAL.Fatalf("duplicate meter usage: %s", name)

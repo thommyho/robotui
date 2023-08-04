@@ -3,9 +3,9 @@ package vehicle
 import (
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/vehicle/bmw"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/vehicle/bmw"
+	"github.com/thommyho/robotui/api"
 )
 
 // BMW is an api.Vehicle implementation for BMW and Mini cars

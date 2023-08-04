@@ -3,7 +3,7 @@ package templates
 import (
 	"errors"
 
-	"github.com/evcc-io/evcc/util"
+	"github.com/thommyho/robotui/util"
 	"gopkg.in/yaml.v3"
 )
 

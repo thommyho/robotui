@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/charger"
-	"github.com/evcc-io/evcc/meter"
-	"github.com/evcc-io/evcc/util/templates"
-	"github.com/evcc-io/evcc/vehicle"
 	"github.com/gorilla/mux"
+	"github.com/robotuimyhorobotuiotui/charger"
+	"github.com/robotuimyhorobotuiotui/meter"
+	"github.com/robotuimyhorobotuiotui/util/templates"
+	"github.com/robotuimyhorobotuiotui/vehicle"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/exp/slices"
 )
 

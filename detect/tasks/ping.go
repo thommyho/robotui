@@ -4,8 +4,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
 	ping "github.com/prometheus-community/pro-bing"
+	"github.com/thommyho/robotui/util"
 )
 
 const Ping TaskType = "ping"
@@ -49,7 +49,7 @@ func (h *PingHandler) Test(log *util.Logger, in ResultDetails) []ResultDetails {
 
 		if runtime.GOOS != "windows" {
 			log.FATAL.Println("")
-			log.FATAL.Println("In order to run evcc in discovery mode, make sure to allow ping:")
+			log.FATAL.Println("In order to run robotui in discovery mode, make sure to allow ping:")
 			log.FATAL.Println("")
 			log.FATAL.Println("	sudo sysctl -w net.ipv4.ping_group_range=\"0 2147483647\"")
 		}

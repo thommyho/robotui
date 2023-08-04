@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/evcc-io/evcc/api"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/exp/slices"
 )
 

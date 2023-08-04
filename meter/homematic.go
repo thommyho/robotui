@@ -3,9 +3,9 @@ package meter
 import (
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/meter/homematic"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/meter/homematic"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 // Homematic CCU meter implementation

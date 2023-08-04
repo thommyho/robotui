@@ -3,9 +3,9 @@ package etron
 import (
 	"context"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
+	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/shurcooL/graphql"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/oauth2"
 )
 

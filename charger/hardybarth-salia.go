@@ -26,16 +26,16 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff/v4"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/charger/echarge"
-	"github.com/evcc-io/evcc/charger/echarge/salia"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/charger/echarge"
+	"github.com/robotuimyhorobotuiotui/charger/echarge/salia"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/api"
 )
 
-// https://github.com/evcc-io/evcc/discussions/778
+// https://github.com/robotuimyhorobotuiotui/discussions/778
 
 // Salia charger implementation
 type Salia struct {

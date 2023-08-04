@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/evcc-io/evcc/util"
 	ocpp16 "github.com/lorenzodonini/ocpp-go/ocpp1.6"
+	"github.com/thommyho/robotui/util"
 )
 
 type CS struct {

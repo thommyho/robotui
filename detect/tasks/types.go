@@ -1,8 +1,8 @@
 package tasks
 
 import (
-	"github.com/evcc-io/evcc/util"
 	"github.com/jinzhu/copier"
+	"github.com/thommyho/robotui/util"
 )
 
 type ResultDetails struct {

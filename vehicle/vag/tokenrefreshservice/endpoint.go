@@ -5,10 +5,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/urlvalues"
-	"github.com/evcc-io/evcc/vehicle/vag"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/urlvalues"
+	"github.com/robotuimyhorobotuiotui/vehicle/vag"
+	"github.com/thommyho/robotui/util"
 )
 
 const (

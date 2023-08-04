@@ -10,16 +10,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
 	"github.com/google/go-github/v32/github"
 	"github.com/hashicorp/go-version"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/oauth2"
 )
 
 const (
-	owner      = "evcc-io"
-	repository = "evcc"
+	owner      = "robotui-io"
+	repository = "robotui"
 
 	timeout = 30 * time.Second
 )

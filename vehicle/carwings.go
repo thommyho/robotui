@@ -7,17 +7,17 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/api"
 
 	"github.com/joeshaw/carwings"
 )
 
 const (
 	carwingsRequestTimeout = 90 * time.Second
-	carwingsStatusExpiry   = 5 * time.Minute // if returned status value is older, evcc will init refresh
+	carwingsStatusExpiry   = 5 * time.Minute // if returned status value is older, robotui will init refresh
 	carwingsRefreshTimeout = 2 * time.Minute // timeout to get status after refresh
 )
 

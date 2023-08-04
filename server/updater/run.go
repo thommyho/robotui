@@ -3,9 +3,9 @@
 package updater
 
 import (
-	"github.com/evcc-io/evcc/server"
-	"github.com/evcc-io/evcc/util"
 	"github.com/google/go-github/v32/github"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/server"
 )
 
 // Run regularly checks version

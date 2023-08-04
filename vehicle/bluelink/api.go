@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/transport"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/transport"
+	"github.com/thommyho/robotui/util"
 )
 
 const (

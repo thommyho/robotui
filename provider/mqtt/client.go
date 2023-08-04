@@ -8,9 +8,9 @@ import (
 	"sync"
 
 	paho "github.com/eclipse/paho.mqtt.golang"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/api"
 )
 
 // Instance is the paho Mqtt client singleton
@@ -19,7 +19,7 @@ var Instance *Client
 // ClientID created unique mqtt client id
 func ClientID() string {
 	pid := rand.Int31()
-	return fmt.Sprintf("evcc-%d", pid)
+	return fmt.Sprintf("robotui-%d", pid)
 }
 
 // Config is the public configuration

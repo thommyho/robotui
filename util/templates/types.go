@@ -144,7 +144,7 @@ func (t *TextLanguage) MarshalJSON() (out []byte, err error) {
 
 // Requirements
 type Requirements struct {
-	EVCC        []string     // EVCC requirements, e.g. sponsorship
+	robotui     []string     // robotui requirements, e.g. sponsorship
 	Description TextLanguage // Description of requirements, e.g. how the device needs to be prepared
 	URI         string       // URI to a webpage with more details about the preparation requirements
 }

@@ -1,6 +1,6 @@
 package detect
 
-import "github.com/evcc-io/evcc/detect/tasks"
+import "github.com/thommyho/robotui/detect/tasks"
 
 type Criteria map[string]interface{}
 

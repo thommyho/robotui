@@ -3,9 +3,9 @@ package provider
 import (
 	"time"
 
-	"github.com/evcc-io/evcc/provider/mqtt"
-	"github.com/evcc-io/evcc/provider/pipeline"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/provider/pipeline"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/provider/mqtt"
 )
 
 // Mqtt provider

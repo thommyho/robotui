@@ -3,8 +3,8 @@ package provider
 import (
 	"strconv"
 
-	"github.com/evcc-io/evcc/provider/pipeline"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/provider/pipeline"
 )
 
 type constProvider struct {

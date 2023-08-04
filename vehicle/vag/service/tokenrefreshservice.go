@@ -3,9 +3,9 @@ package service
 import (
 	"net/url"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/vehicle/vag/tokenrefreshservice"
-	"github.com/evcc-io/evcc/vehicle/vag/vwidentity"
+	"github.com/robotuimyhorobotuiotui/vehicle/vag/tokenrefreshservice"
+	"github.com/robotuimyhorobotuiotui/vehicle/vag/vwidentity"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/oauth2"
 )
 

@@ -9,12 +9,12 @@ import (
 	"strings"
 
 	"github.com/coreos/go-oidc/v3/oidc"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/urlvalues"
-	"github.com/evcc-io/evcc/vehicle/vag"
 	"github.com/google/uuid"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/urlvalues"
+	"github.com/robotuimyhorobotuiotui/vehicle/vag"
 	"github.com/samber/lo"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/net/publicsuffix"
 )
 

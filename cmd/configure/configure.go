@@ -6,7 +6,7 @@ import (
 	"text/template"
 
 	"github.com/Masterminds/sprig/v3"
-	"github.com/evcc-io/evcc/util/templates"
+	"github.com/thommyho/robotui/util/templates"
 )
 
 type device struct {

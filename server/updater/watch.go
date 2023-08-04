@@ -4,10 +4,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
 	"github.com/google/go-github/v32/github"
 	"github.com/gorilla/mux"
 	"github.com/hashicorp/go-version"
+	"github.com/thommyho/robotui/util"
 )
 
 type webServer interface {

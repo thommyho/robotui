@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/evcc-io/evcc/provider/sma"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/provider/sma"
 	"gitlab.com/bboehmke/sunny"
 )
 

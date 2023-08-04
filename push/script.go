@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
 	"github.com/kballard/go-shellquote"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/util"
 )
 
 func init() {

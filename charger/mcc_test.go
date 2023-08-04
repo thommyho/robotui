@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/api"
 )
 
 // HTTP testing appproach from http://hassansin.github.io/Unit-Testing-http-client-in-Go

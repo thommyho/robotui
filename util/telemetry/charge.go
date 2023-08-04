@@ -8,15 +8,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/evcc-io/evcc/server/db/settings"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/machine"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/machine"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/server/db/settings"
 )
 
 const (
-	api            = "https://api.evcc.io"
+	api            = "https://api.robotui.io"
 	enabledSetting = "telemetry"
 )
 
@@ -50,7 +50,7 @@ func Enable(enable bool) error {
 
 func Create(machineID string) {
 	if machineID == "" {
-		machineID, _ = machine.ProtectedID("evcc-api")
+		machineID, _ = machine.ProtectedID("robotui-api")
 	}
 
 	instanceID = machineID

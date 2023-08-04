@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/vehicle/aiways"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/vehicle/aiways"
+	"github.com/thommyho/robotui/api"
 )
 
 // https://github.com/davidgiga1993/AiwaysAPI

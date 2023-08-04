@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/mock"
-	"github.com/evcc-io/evcc/util"
 	"github.com/golang/mock/gomock"
+	"github.com/robotuimyhorobotuiotui/mock"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 func TestNoMeter(t *testing.T) {

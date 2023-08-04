@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/provider/pipeline"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/transport"
 	"github.com/jpfielding/go-http-digest/pkg/digest"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/transport"
+	"github.com/thommyho/robotui/provider/pipeline"
 )
 
 // HTTP implements HTTP request provider

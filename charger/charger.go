@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 // Charger is an api.Charger implementation with configurable getters and setters.

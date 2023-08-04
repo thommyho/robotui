@@ -1,6 +1,6 @@
 package core
 
-import "github.com/evcc-io/evcc/api"
+import "github.com/thommyho/robotui/api"
 
 // configProvider gives access to configuration repository
 type configProvider interface {

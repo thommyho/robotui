@@ -72,7 +72,7 @@ func runOcpp(cmd *cobra.Command, args []string) {
 		for msg := range handler.triggerC {
 			switch msg {
 			case core.BootNotificationFeatureName:
-				if res, err := chargePoint.BootNotification("demo", "evcc"); err != nil {
+				if res, err := chargePoint.BootNotification("demo", "robotui"); err != nil {
 					log.Println("BootNotification:", err)
 				} else {
 					log.Println("BootNotification:", res)

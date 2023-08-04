@@ -8,14 +8,14 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/evcc-io/evcc/util/templates"
+	"github.com/thommyho/robotui/util/templates"
 	"golang.org/x/exp/slices"
 )
 
 const (
 	language    = "de"
 	docsPath    = "../../../templates/docs"
-	websitePath = "../../../templates/evcc.io"
+	websitePath = "../../../templates/robotui.io"
 )
 
 //go:generate go run main.go

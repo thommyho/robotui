@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/util"
 )
 
 // https://github.com/snaptec/openWB/blob/master/modules/soc_aiways/aiways_get_soc.py

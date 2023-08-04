@@ -9,10 +9,10 @@ import (
 
 	"github.com/enbility/cemd/emobility"
 	"github.com/enbility/eebus-go/features"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/charger/eebus"
-	"github.com/evcc-io/evcc/core/loadpoint"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/charger/eebus"
+	"github.com/robotuimyhorobotuiotui/core/loadpoint"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 )
 
 const (
@@ -330,7 +330,7 @@ func (c *EEBus) writeCurrentLimitData(currents []float64) error {
 	// the charge cable in. Or even worse show an error and the cable needs the unplugged,
 	// wait for the car to go into sleep and plug it back in.
 	// So if are currentls smaller 6A with unknown communication standard change them to 6A
-	// keep in mind, that still will confuse evcc as it thinks charging is stopped, but it isn't yet
+	// keep in mind, that still will confuse robotui as it thinks charging is stopped, but it isn't yet
 	if comStandard == emobility.EVCommunicationStandardTypeUnknown {
 		minLimits, _, _, err := c.emobility.EVCurrentLimits()
 		if err == nil {

@@ -1,6 +1,6 @@
 package modbus
 
-import "github.com/evcc-io/evcc/util"
+import "github.com/thommyho/robotui/util"
 
 type logger struct {
 	log *util.Logger

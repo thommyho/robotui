@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/evcc-io/evcc/provider/pipeline"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/provider/pipeline"
 )
 
 type msgHandler struct {

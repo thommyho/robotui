@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/evcc-io/evcc/server"
-	"github.com/evcc-io/evcc/util"
 	"github.com/google/go-github/v32/github"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/server"
 )
 
 var latest *github.RepositoryRelease
@@ -35,7 +35,7 @@ func Run(log *util.Logger, httpd webServer, outChan chan<- util.Param) {
 	}
 }
 
-const rootFSAsset = "evcc_%s.rootfs.gz"
+const rootFSAsset = "robotui_%s.rootfs.gz"
 
 func (u *watch) updateHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost || latest == nil {

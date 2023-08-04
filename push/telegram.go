@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/evcc-io/evcc/util"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+	"github.com/thommyho/robotui/util"
 )
 
 func init() {

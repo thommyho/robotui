@@ -18,14 +18,14 @@ import (
 	"github.com/enbility/cemd/emobility"
 	"github.com/enbility/eebus-go/service"
 	"github.com/enbility/eebus-go/spine/model"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/machine"
+	"github.com/robotuimyhorobotuiotui/util/machine"
+	"github.com/thommyho/robotui/util"
 )
 
 const (
-	EEBUSBrandName  string = "EVCC"
+	EEBUSBrandName  string = "robotui"
 	EEBUSModel      string = "HEMS"
-	EEBUSDeviceCode string = "EVCC_HEMS_01" // used as common name in cert generation
+	EEBUSDeviceCode string = "robotui_HEMS_01" // used as common name in cert generation
 )
 
 type EEBusClientCBs struct {
@@ -65,11 +65,11 @@ func NewServer(other map[string]interface{}) (*EEBus, error) {
 	log := util.NewLogger("eebus")
 
 	var err error
-	protectedID, err := machine.ProtectedID("evcc-eebus")
+	protectedID, err := machine.ProtectedID("robotui-eebus")
 	if err != nil {
 		return nil, err
 	}
-	serial := fmt.Sprintf("%s-%0x", "EVCC", protectedID[:8])
+	serial := fmt.Sprintf("%s-%0x", "robotui", protectedID[:8])
 
 	if len(cc.ShipID) != 0 {
 		serial = cc.ShipID
@@ -100,7 +100,7 @@ func NewServer(other map[string]interface{}) (*EEBus, error) {
 	}
 
 	// for backward compatibility
-	configuration.SetAlternateMdnsServiceName("EVCC_HEMS_01")
+	configuration.SetAlternateMdnsServiceName("robotui_HEMS_01")
 	configuration.SetAlternateIdentifier(serial)
 	configuration.SetInterfaces(cc.Interfaces)
 	configuration.SetRegisterAutoAccept(true)
@@ -134,7 +134,7 @@ func (c *EEBus) RegisterEVSE(ski, ip string, connectHandler func(string), discon
 	c.log.TRACE.Printf("registering ski: %s", ski)
 
 	if ski == c.SKI {
-		c.log.FATAL.Fatal("The charger SKI can not be identical to the SKI of evcc!")
+		c.log.FATAL.Fatal("The charger SKI can not be identical to the SKI of robotui!")
 	}
 
 	serviceDetails := service.NewServiceDetails(ski)

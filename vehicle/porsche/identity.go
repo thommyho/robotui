@@ -11,11 +11,11 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/oauth"
-	"github.com/evcc-io/evcc/util/request"
 	cv "github.com/nirasan/go-oauth-pkce-code-verifier"
+	"github.com/robotuimyhorobotuiotui/util/oauth"
+	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/samber/lo"
+	"github.com/thommyho/robotui/util"
 	"golang.org/x/oauth2"
 )
 

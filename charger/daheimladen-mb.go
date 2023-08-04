@@ -24,9 +24,9 @@ import (
 	"unicode/utf16"
 	"unicode/utf8"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/modbus"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/modbus"
+	"github.com/thommyho/robotui/api"
 )
 
 // DaheimLadenMB charger implementation

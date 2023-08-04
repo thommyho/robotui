@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/vehicle/mb"
-	"github.com/evcc-io/evcc/vehicle/smart"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/vehicle/mb"
+	"github.com/robotuimyhorobotuiotui/vehicle/smart"
+	"github.com/thommyho/robotui/api"
 )
 
 // Smart is an api.Vehicle implementation for Smart cars

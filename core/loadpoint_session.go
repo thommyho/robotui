@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/db"
+	"github.com/robotuimyhorobotuiotui/core/db"
+	"github.com/thommyho/robotui/api"
 )
 
 func (lp *Loadpoint) chargeMeterTotal() float64 {

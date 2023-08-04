@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/charger/pcelectric"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/charger/pcelectric"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/api"
 )
 
 // PCElectric charger implementation

@@ -12,15 +12,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/loadpoint"
-	"github.com/evcc-io/evcc/core/site"
-	"github.com/evcc-io/evcc/server"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/machine"
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
 	"github.com/koron/go-ssdp"
+	"github.com/robotuimyhorobotuiotui/core/loadpoint"
+	"github.com/robotuimyhorobotuiotui/core/site"
+	"github.com/robotuimyhorobotuiotui/server"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/machine"
+	"github.com/thommyho/robotui/api"
 )
 
 const (
@@ -34,7 +34,7 @@ const (
 	maxAge           = 1800
 )
 
-var serverName = "EVCC SEMP Server " + server.Version
+var serverName = "robotui SEMP Server " + server.Version
 
 // SEMP is the SMA SEMP server
 type SEMP struct {
@@ -234,8 +234,8 @@ func (s *SEMP) gatewayDescription(w http.ResponseWriter, r *http.Request) {
 		SpecVersion: SpecVersion{Major: 1},
 		Device: Device{
 			DeviceType:      sempGateway,
-			FriendlyName:    "evcc",
-			Manufacturer:    "github.com/evcc-io/evcc",
+			FriendlyName:    "robotui",
+			Manufacturer:    "github.com/robotuimyhorobotuiotui",
 			ModelName:       serverName,
 			PresentationURL: s.hostURI,
 			UDN:             uid,
@@ -344,7 +344,7 @@ func (s *SEMP) serialNumber(id int) string {
 func UniqueDeviceID() ([]byte, error) {
 	bytes := 6
 
-	mid, err := machine.ProtectedID("evcc-semp")
+	mid, err := machine.ProtectedID("robotui-semp")
 	if err != nil {
 		return nil, err
 	}
@@ -380,7 +380,7 @@ func (s *SEMP) deviceInfo(id int, lp loadpoint.API) DeviceInfo {
 			DeviceName:   lp.Title(),
 			DeviceType:   sempCharger,
 			DeviceSerial: s.serialNumber(id),
-			DeviceVendor: "github.com/evcc-io/evcc",
+			DeviceVendor: "github.com/robotuimyhorobotuiotui",
 		},
 		Capabilities: Capabilities{
 			CurrentPowerMethod:   method,

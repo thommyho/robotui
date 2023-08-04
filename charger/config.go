@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/evcc-io/evcc/api"
+	"github.com/thommyho/robotui/api"
 )
 
 type chargerRegistry map[string]func(map[string]interface{}) (api.Charger, error)

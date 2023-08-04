@@ -6,7 +6,7 @@ import (
 	"text/template"
 
 	"github.com/Masterminds/sprig/v3"
-	"github.com/evcc-io/evcc/util"
+	"github.com/thommyho/robotui/util"
 )
 
 // Event is a notification event
@@ -85,7 +85,7 @@ func (h *Hub) Run(events <-chan Event, valueChan chan util.Param) {
 			continue
 		}
 
-		// let cache catch up, refs https://github.com/evcc-io/evcc/pull/445
+		// let cache catch up, refs https://github.com/robotuimyhorobotuiotui/pull/445
 		flushC := util.Flusher()
 		valueChan <- util.Param{Val: flushC}
 		<-flushC

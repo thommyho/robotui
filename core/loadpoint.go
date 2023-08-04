@@ -9,16 +9,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/coordinator"
-	"github.com/evcc-io/evcc/core/db"
-	"github.com/evcc-io/evcc/core/loadpoint"
-	"github.com/evcc-io/evcc/core/planner"
-	"github.com/evcc-io/evcc/core/soc"
-	"github.com/evcc-io/evcc/core/wrapper"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/push"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/core/coordinator"
+	"github.com/robotuimyhorobotuiotui/core/db"
+	"github.com/robotuimyhorobotuiotui/core/loadpoint"
+	"github.com/robotuimyhorobotuiotui/core/planner"
+	"github.com/robotuimyhorobotuiotui/core/soc"
+	"github.com/robotuimyhorobotuiotui/core/wrapper"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/push"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 
 	evbus "github.com/asaskevich/EventBus"
 	"github.com/avast/retry-go/v4"
@@ -349,7 +349,7 @@ func (lp *Loadpoint) configureChargerType(charger api.Charger) {
 
 	// ensure charge rater exists
 	// measurement are obtained from separate charge meter if defined
-	// (https://github.com/evcc-io/evcc/issues/2469)
+	// (https://github.com/robotuimyhorobotuiotui/issues/2469)
 	if rt, ok := charger.(api.ChargeRater); ok && integrated {
 		lp.chargeRater = rt
 
@@ -424,7 +424,7 @@ func (lp *Loadpoint) evChargeStopHandler() {
 	lp.socUpdated = time.Time{}
 
 	// reset pv enable/disable timer
-	// https://github.com/evcc-io/evcc/issues/2289
+	// https://github.com/robotuimyhorobotuiotui/issues/2289
 	if !lp.pvTimer.Equal(elapsed) {
 		lp.resetPVTimer()
 	}
@@ -702,7 +702,7 @@ func (lp *Loadpoint) setLimit(chargeCurrent float64, force bool) error {
 		if err != nil {
 			v := lp.GetVehicle()
 			if vv, ok := v.(api.Resurrector); ok && errors.Is(err, api.ErrAsleep) {
-				// https://github.com/evcc-io/evcc/issues/8254
+				// https://github.com/robotuimyhorobotuiotui/issues/8254
 				// wakeup vehicle
 				lp.log.DEBUG.Printf("max charge current: waking up vehicle")
 				if err := vv.WakeUp(); err != nil {
@@ -729,7 +729,7 @@ func (lp *Loadpoint) setLimit(chargeCurrent float64, force bool) error {
 		if err := lp.charger.Enable(enabled); err != nil {
 			v := lp.GetVehicle()
 			if vv, ok := v.(api.Resurrector); enabled && ok && errors.Is(err, api.ErrAsleep) {
-				// https://github.com/evcc-io/evcc/issues/8254
+				// https://github.com/robotuimyhorobotuiotui/issues/8254
 				// wakeup vehicle
 				lp.log.DEBUG.Printf("charger %s: waking up vehicle", status[enabled])
 				if err := vv.WakeUp(); err != nil {
@@ -1010,9 +1010,9 @@ func (lp *Loadpoint) pvScalePhases(availablePower, minCurrent, maxCurrent float6
 	phases := lp.GetPhases()
 
 	// observed phase state inconsistency
-	// - https://github.com/evcc-io/evcc/issues/1572
-	// - https://github.com/evcc-io/evcc/issues/2230
-	// - https://github.com/evcc-io/evcc/issues/2613
+	// - https://github.com/robotuimyhorobotuiotui/issues/1572
+	// - https://github.com/robotuimyhorobotuiotui/issues/2230
+	// - https://github.com/robotuimyhorobotuiotui/issues/2613
 	measuredPhases := lp.getMeasuredPhases()
 	if phases > 0 && phases < measuredPhases {
 		if lp.guardGracePeriodElapsed() {
@@ -1221,8 +1221,8 @@ func (lp *Loadpoint) UpdateChargePower() {
 		lp.log.DEBUG.Printf("charge power: %.0fW", value)
 		lp.publish("chargePower", value)
 
-		// https://github.com/evcc-io/evcc/issues/2153
-		// https://github.com/evcc-io/evcc/issues/6986
+		// https://github.com/robotuimyhorobotuiotui/issues/2153
+		// https://github.com/robotuimyhorobotuiotui/issues/6986
 		if lp.chargePower < -20 {
 			lp.log.WARN.Printf("charge power must not be negative: %.0f", lp.chargePower)
 		}
@@ -1316,7 +1316,7 @@ func (lp *Loadpoint) updateChargeVoltages() {
 func (lp *Loadpoint) publishChargeProgress() {
 	if f, err := lp.chargeRater.ChargedEnergy(); err == nil {
 		// workaround for Go-E resetting during disconnect, see
-		// https://github.com/evcc-io/evcc/issues/5092
+		// https://github.com/robotuimyhorobotuiotui/issues/5092
 		if f > lp.chargedAtStartup {
 			lp.sessionEnergy.Update(f - lp.chargedAtStartup)
 		}
@@ -1532,7 +1532,7 @@ func (lp *Loadpoint) Update(sitePower float64, autoCharge, batteryBuffered, batt
 	switch {
 	case !lp.connected():
 		// always disable charger if not connected
-		// https://github.com/evcc-io/evcc/issues/105
+		// https://github.com/robotuimyhorobotuiotui/issues/105
 		err = lp.setLimit(0, false)
 
 	case lp.scalePhasesRequired():

@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
+	"github.com/thommyho/robotui/util"
 	"gitlab.com/bboehmke/sunny"
 )
 

@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	"github.com/benbjohnson/clock"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/tariff/fixed"
 	"github.com/golang-module/carbon/v2"
+	"github.com/robotuimyhorobotuiotui/tariff/fixed"
 	"github.com/stretchr/testify/assert"
+	"github.com/thommyho/robotui/api"
 )
 
 func TestFixed(t *testing.T) {

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/vehicle/ford"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/vehicle/ford"
+	"github.com/thommyho/robotui/api"
 )
 
 // https://github.com/d4v3y0rk/ffpass-module

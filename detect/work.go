@@ -5,10 +5,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/evcc-io/evcc/detect/tasks"
-	"github.com/evcc-io/evcc/util"
 	"github.com/fatih/structs"
 	"github.com/jeremywohl/flatten"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/detect/tasks"
 )
 
 func workers(log *util.Logger, num int, tasks <-chan string, hits chan<- []tasks.Result) *sync.WaitGroup {

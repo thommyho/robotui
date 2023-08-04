@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/mock"
-	"github.com/evcc-io/evcc/util"
 	"github.com/golang/mock/gomock"
+	"github.com/robotuimyhorobotuiotui/mock"
+	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/stretchr/testify/assert"
+	"github.com/thommyho/robotui/api"
 )
 
 func TestRemainingChargeDuration(t *testing.T) {
@@ -214,7 +214,7 @@ func TestImprovedEstimatorRemainingChargeDuration(t *testing.T) {
 	charger := mock.NewMockCharger(ctrl)
 	vehicle := mock.NewMockVehicle(ctrl)
 
-	// https://github.com/evcc-io/evcc/pull/7510#issuecomment-1512688548
+	// https://github.com/robotuimyhorobotuiotui/pull/7510#issuecomment-1512688548
 	tc := []struct {
 		capacity    float64
 		soc         float64

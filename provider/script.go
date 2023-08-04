@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/jq"
-	"github.com/evcc-io/evcc/util/request"
 	"github.com/itchyny/gojq"
 	"github.com/kballard/go-shellquote"
+	"github.com/robotuimyhorobotuiotui/util/jq"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/util"
 )
 
 // Script implements shell script-based providers and setters

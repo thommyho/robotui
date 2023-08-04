@@ -3,7 +3,7 @@ package provider
 import (
 	"fmt"
 
-	"github.com/evcc-io/evcc/util"
+	"github.com/thommyho/robotui/util"
 )
 
 // setFormattedValue formats a message template or returns the value formatted as %v if the message template is empty

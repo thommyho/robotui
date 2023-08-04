@@ -24,13 +24,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/charger/smaevcharger"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/sponsor"
 	"github.com/hashicorp/go-version"
+	"github.com/robotuimyhorobotuiotui/charger/smaevcharger"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/oauth2"
 )
 
@@ -145,10 +145,10 @@ func (wb *Smaevcharger) Status() (api.ChargeStatus, error) {
 
 	if state != wb.oldstate {
 		// if the wallbox detects a car, it automatically switches to the charging state of the selector switch.
-		// Since EVCC requires the fast charging option, the wallbox would immediately start charging with maximum charging power,
-		// without taking into account the desired state of evcc. Since this is not desired,
+		// Since robotui requires the fast charging option, the wallbox would immediately start charging with maximum charging power,
+		// without taking into account the desired state of robotui. Since this is not desired,
 		// the charging status must be changed / overwritten from fast charging to charging stop as soon as a vehicle is detected (StatusB)
-		// After that, EVCC can decide which charging option should be selected.
+		// After that, robotui can decide which charging option should be selected.
 
 		if state == smaevcharger.StatusB && wb.oldstate == smaevcharger.StatusA {
 			if err := wb.Send(value("Parameter.Chrg.ActChaMod", smaevcharger.StopCharge)); err != nil {
@@ -202,7 +202,7 @@ func (wb *Smaevcharger) Enable(enable bool) error {
 			// If the selector switch of the wallbox is in the wrong position (eco-charging and not fast charging),
 			// the charging process is started with eco-charging when it is activated,
 			// which may be desired when integrated with SHM.
-			// Since evcc does not have full control over the charging station in this mode,
+			// Since robotui does not have full control over the charging station in this mode,
 			// a corresponding error is returned to indicate the incorrect switch position.
 			// If the wallbox is installed without SHM, charging in eco mode is not possible.
 			_ = wb.Send(value("Parameter.Chrg.ActChaMod", smaevcharger.OptiCharge))

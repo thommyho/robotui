@@ -28,5 +28,5 @@ const (
 
 	CHARGE_RATE ConfigKey = "ChargeRate"
 
-	EVCC_IDTAG string = "evcc"
+	robotui_IDTAG string = "robotui"
 )

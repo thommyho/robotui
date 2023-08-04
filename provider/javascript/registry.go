@@ -6,10 +6,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/evcc-io/evcc/util"
 	"github.com/robertkrimen/otto"
 	_ "github.com/robertkrimen/otto/underscore"
 	"github.com/samber/lo"
+	"github.com/thommyho/robotui/util"
 )
 
 var (

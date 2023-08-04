@@ -5,8 +5,8 @@ import (
 	"text/template"
 
 	"github.com/Masterminds/sprig/v3"
-	"github.com/evcc-io/evcc/charger/eebus"
 	"github.com/spf13/cobra"
+	"github.com/thommyho/robotui/charger/eebus"
 )
 
 // teslaCmd represents the vehicle command
@@ -21,7 +21,7 @@ func init() {
 }
 
 const tmpl = `
-Add the following to the evcc config file:
+Add the following to the robotui config file:
 
 eebus:
   certificate:

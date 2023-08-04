@@ -6,9 +6,9 @@ import (
 	"io/fs"
 	"log"
 
-	"github.com/evcc-io/evcc/cmd"
-	"github.com/evcc-io/evcc/server/assets"
-	_ "github.com/evcc-io/evcc/util/goversion" // require minimum go version
+	"github.com/robotuimyhorobotuiotui/server/assets"
+	_ "github.com/robotuimyhorobotuiotui/util/goversion" // require minimum go version
+	"github.com/thommyho/robotui/cmd"
 )
 
 var (

@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/site"
-	"github.com/evcc-io/evcc/hems/ocpp/profile"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/machine"
+	"github.com/robotuimyhorobotuiotui/core/site"
+	"github.com/robotuimyhorobotuiotui/hems/ocpp/profile"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/machine"
+	"github.com/thommyho/robotui/api"
 
 	ocpp16 "github.com/lorenzodonini/ocpp-go/ocpp1.6"
 	ocppcore "github.com/lorenzodonini/ocpp-go/ocpp1.6/core"
@@ -40,11 +40,11 @@ func New(conf map[string]interface{}, site site.API) (*OCPP, error) {
 	log := util.NewLogger("ocpp")
 
 	if cc.StationID == "" {
-		id, err := machine.ProtectedID("evcc-ocpp")
+		id, err := machine.ProtectedID("robotui-ocpp")
 		if err == nil {
-			cc.StationID = fmt.Sprintf("evcc-%s", strings.ToLower(id))
+			cc.StationID = fmt.Sprintf("robotui-%s", strings.ToLower(id))
 		} else {
-			cc.StationID = fmt.Sprintf("evcc-%d", rand.Int31())
+			cc.StationID = fmt.Sprintf("robotui-%d", rand.Int31())
 		}
 		log.DEBUG.Println("station id:", cc.StationID)
 	}

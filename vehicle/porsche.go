@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/vehicle/porsche"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/vehicle/porsche"
 	"github.com/samber/lo"
+	"github.com/thommyho/robotui/api"
 )
 
 // Porsche is an api.Vehicle implementation for Porsche cars

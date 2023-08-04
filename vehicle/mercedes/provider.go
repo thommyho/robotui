@@ -3,7 +3,7 @@ package mercedes
 import (
 	"time"
 
-	"github.com/evcc-io/evcc/provider"
+	"github.com/thommyho/robotui/provider"
 )
 
 // Provider implements the vehicle api

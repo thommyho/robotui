@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/thommyho/robotui/util"
 )
 
 type roundTripper struct {
@@ -29,7 +29,7 @@ func init() {
 	labels := []string{"host"}
 
 	reqMetric = prometheus.NewSummaryVec(prometheus.SummaryOpts{
-		Namespace: "evcc",
+		Namespace: "robotui",
 		Subsystem: "http",
 		Name:      "request_duration_seconds",
 		Help:      "A summary of HTTP request durations",
@@ -41,7 +41,7 @@ func init() {
 	}, labels)
 
 	resMetric = prometheus.NewCounterVec(prometheus.CounterOpts{
-		Namespace: "evcc",
+		Namespace: "robotui",
 		Subsystem: "http",
 		Name:      "request_total",
 		Help:      "Total count of HTTP requests",

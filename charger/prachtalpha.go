@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/modbus"
-	"github.com/evcc-io/evcc/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/modbus"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/api"
 )
 
 // PrachtAlpha charger implementation
@@ -133,7 +133,7 @@ func (wb *PrachtAlpha) Enabled() (bool, error) {
 		return false, err
 	}
 
-	// get total current (https://github.com/evcc-io/evcc/issues/3738)
+	// get total current (https://github.com/robotuimyhorobotuiotui/issues/3738)
 	t, err := wb.conn.ReadHoldingRegisters(prachtTotalCurrent, 1)
 	if err != nil {
 		return false, err
@@ -156,7 +156,7 @@ func (wb *PrachtAlpha) setCurrent(current uint16) error {
 	reg := wb.register(prachtConnCurrent)
 	_, err := wb.conn.WriteSingleRegister(reg, current)
 
-	// set total current (https://github.com/evcc-io/evcc/issues/3738)
+	// set total current (https://github.com/robotuimyhorobotuiotui/issues/3738)
 	if err == nil {
 		_, err = wb.conn.WriteSingleRegister(prachtTotalCurrent, current)
 	}

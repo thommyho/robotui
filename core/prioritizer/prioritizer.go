@@ -3,8 +3,8 @@ package prioritizer
 import (
 	"fmt"
 
-	"github.com/evcc-io/evcc/core/loadpoint"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/core/loadpoint"
 )
 
 type Prioritizer struct {

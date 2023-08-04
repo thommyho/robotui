@@ -7,13 +7,13 @@ import (
 	"os"
 	"strings"
 
-	"github.com/evcc-io/evcc/detect"
-	"github.com/evcc-io/evcc/detect/tasks"
-	"github.com/evcc-io/evcc/util"
 	"github.com/korylprince/ipnetgen"
 	"github.com/olekukonko/tablewriter"
+	"github.com/robotuimyhorobotuiotui/detect/tasks"
+	"github.com/robotuimyhorobotuiotui/util"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/thommyho/robotui/detect"
 )
 
 // detectCmd represents the vehicle command
@@ -23,8 +23,8 @@ var detectCmd = &cobra.Command{
 	Long: `Automatic discovery using detect scans the local network for available devices.
 Scanning focuses on devices that are commonly used that are detectable with reasonable efforts.
 
-On successful detection, suggestions for EVCC configuration can be made. The suggestions should simplify
-configuring EVCC but are probably not sufficient for fully automatic configuration.`,
+On successful detection, suggestions for robotui configuration can be made. The suggestions should simplify
+configuring robotui but are probably not sufficient for fully automatic configuration.`,
 	Run: runDetect,
 }
 
@@ -103,8 +103,8 @@ func runDetect(cmd *cobra.Command, args []string) {
 	fmt.Println(`
 Auto detection will now start to scan the network for available devices.
 Scanning focuses on devices that are commonly used that are detectable with reasonable efforts.
-On successful detection, suggestions for EVCC configuration can be made. The suggestions should simplify
-configuring EVCC but are probably not sufficient for fully automatic configuration.`)
+On successful detection, suggestions for robotui configuration can be made. The suggestions should simplify
+configuring robotui but are probably not sufficient for fully automatic configuration.`)
 	fmt.Println()
 
 	// args

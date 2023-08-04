@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	xj "github.com/basgys/goxml2json"
-	"github.com/evcc-io/evcc/provider/javascript"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/jq"
 	"github.com/itchyny/gojq"
 	"github.com/robertkrimen/otto"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/jq"
+	"github.com/thommyho/robotui/provider/javascript"
 	"github.com/volkszaehler/mbmd/meters/rs485"
 )
 

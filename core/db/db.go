@@ -1,8 +1,8 @@
 package db
 
 import (
-	serverdb "github.com/evcc-io/evcc/server/db"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	serverdb "github.com/thommyho/robotui/server/db"
 	"gorm.io/gorm"
 )
 

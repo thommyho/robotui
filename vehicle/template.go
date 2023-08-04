@@ -1,8 +1,8 @@
 package vehicle
 
 import (
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util/templates"
+	"github.com/robotuimyhorobotuiotui/util/templates"
+	"github.com/thommyho/robotui/api"
 )
 
 func init() {

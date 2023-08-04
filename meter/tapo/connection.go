@@ -18,9 +18,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
 	"github.com/mergermarket/go-pkcs7"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/util"
 )
 
 // Tapo homepage + api reverse engineering results

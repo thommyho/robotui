@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/evcc-io/evcc/util/templates"
+	"github.com/thommyho/robotui/util/templates"
 	"golang.org/x/exp/slices"
 )
 

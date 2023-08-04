@@ -12,12 +12,12 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/oauth"
-	"github.com/evcc-io/evcc/util/request"
 	"github.com/google/uuid"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/oauth"
+	"github.com/robotuimyhorobotuiotui/util/request"
 	"github.com/samber/lo"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/net/publicsuffix"
 	"golang.org/x/oauth2"
 )

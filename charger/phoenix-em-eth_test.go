@@ -3,7 +3,7 @@ package charger
 import (
 	"testing"
 
-	"github.com/evcc-io/evcc/api"
+	"github.com/thommyho/robotui/api"
 )
 
 func TestPhoenixEMEthDecorators(t *testing.T) {

@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/charger/nrg/connect"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
+	"github.com/robotuimyhorobotuiotui/charger/nrg/connect"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/thommyho/robotui/api"
 )
 
 // https://www.nrgkick.com/wp-content/uploads/2019/08/20190814_API-Dokumentation_04.pdf

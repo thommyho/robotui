@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/core/db"
-	"github.com/evcc-io/evcc/core/soc"
-	"github.com/evcc-io/evcc/provider"
-	"github.com/evcc-io/evcc/server/db/settings"
+	"github.com/robotuimyhorobotuiotui/core/db"
+	"github.com/robotuimyhorobotuiotui/core/soc"
+	"github.com/robotuimyhorobotuiotui/provider"
+	"github.com/robotuimyhorobotuiotui/server/db/settings"
+	"github.com/thommyho/robotui/api"
 	"golang.org/x/exp/slices"
 )
 

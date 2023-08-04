@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/util/transport"
 	"github.com/jpfielding/go-http-digest/pkg/digest"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/util/transport"
+	"github.com/thommyho/robotui/util"
 )
 
 // Connection is the Shelly connection
@@ -87,7 +87,7 @@ func (d *Connection) execGen2Cmd(method string, enable bool, res interface{}) er
 	data := &Gen2RpcPost{
 		Id:     d.channel,
 		On:     enable,
-		Src:    "evcc",
+		Src:    "robotui",
 		Method: method,
 	}
 

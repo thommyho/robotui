@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/modbus"
 	gridx "github.com/grid-x/modbus"
+	"github.com/robotuimyhorobotuiotui/util/modbus"
+	"github.com/thommyho/robotui/util"
 	"github.com/volkszaehler/mbmd/meters"
 	"github.com/volkszaehler/mbmd/meters/rs485"
 	"github.com/volkszaehler/mbmd/meters/sunspec"

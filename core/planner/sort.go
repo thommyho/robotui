@@ -1,6 +1,6 @@
 package planner
 
-import "github.com/evcc-io/evcc/api"
+import "github.com/thommyho/robotui/api"
 
 // SortByTime is a sortFunc for slices.Sort
 func SortByTime(i, j api.Rate) bool {

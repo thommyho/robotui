@@ -3,8 +3,8 @@ package core
 import (
 	"testing"
 
-	"github.com/evcc-io/evcc/api"
 	"github.com/stretchr/testify/assert"
+	"github.com/thommyho/robotui/api"
 )
 
 func TestStatusEvents(t *testing.T) {

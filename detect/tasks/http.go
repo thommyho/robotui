@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/jq"
 	"github.com/itchyny/gojq"
+	"github.com/robotuimyhorobotuiotui/util/jq"
+	"github.com/thommyho/robotui/util"
 )
 
 const Http TaskType = "http"

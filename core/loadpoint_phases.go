@@ -3,7 +3,7 @@ package core
 import (
 	"math"
 
-	"github.com/evcc-io/evcc/api"
+	"github.com/thommyho/robotui/api"
 )
 
 // setConfiguredPhases sets the default phase configuration

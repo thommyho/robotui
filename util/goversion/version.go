@@ -2,4 +2,4 @@
 
 package goversion
 
-const __EVCC_REQUIRES_GO_VERSION_1_20__ = uint8(0)
+const __robotui_REQUIRES_GO_VERSION_1_20__ = uint8(0)

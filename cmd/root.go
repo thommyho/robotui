@@ -12,17 +12,17 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/evcc-io/evcc/core"
-	"github.com/evcc-io/evcc/push"
-	"github.com/evcc-io/evcc/server"
-	"github.com/evcc-io/evcc/server/modbus"
-	"github.com/evcc-io/evcc/server/updater"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/pipe"
-	"github.com/evcc-io/evcc/util/sponsor"
-	"github.com/evcc-io/evcc/util/telemetry"
 	"github.com/fatih/structs"
 	"github.com/jeremywohl/flatten"
+	"github.com/robotuimyhorobotuiotui/push"
+	"github.com/robotuimyhorobotuiotui/server"
+	"github.com/robotuimyhorobotuiotui/server/modbus"
+	"github.com/robotuimyhorobotuiotui/server/updater"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/pipe"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/robotuimyhorobotuiotui/util/telemetry"
+	"github.com/thommyho/robotui/core"
 	"golang.org/x/exp/maps"
 
 	_ "github.com/joho/godotenv/autoload"
@@ -44,7 +44,7 @@ var (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:     "evcc",
+	Use:     "robotui",
 	Short:   "EV Charge Controller",
 	Version: server.FormattedVersion(),
 	Run:     runRoot,
@@ -54,7 +54,7 @@ func init() {
 	cobra.OnInitialize(initConfig)
 
 	// global options
-	rootCmd.PersistentFlags().StringVarP(&cfgFile, "config", "c", "", "Config file (default \"~/evcc.yaml\" or \"/etc/evcc.yaml\")")
+	rootCmd.PersistentFlags().StringVarP(&cfgFile, "config", "c", "", "Config file (default \"~/robotui.yaml\" or \"/etc/robotui.yaml\")")
 
 	rootCmd.PersistentFlags().BoolP("help", "h", false, "Help")
 
@@ -86,10 +86,10 @@ func initConfig() {
 		viper.AddConfigPath(".")    // optionally look for config in the working directory
 		viper.AddConfigPath("/etc") // path to look for the config file in
 
-		viper.SetConfigName("evcc")
+		viper.SetConfigName("robotui")
 	}
 
-	viper.SetEnvPrefix("evcc")
+	viper.SetEnvPrefix("robotui")
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 	viper.AutomaticEnv() // read in environment variables that match
 
@@ -101,7 +101,7 @@ func initConfig() {
 
 	// print version
 	util.LogLevel("info", nil)
-	log.INFO.Printf("evcc %s", server.FormattedVersion())
+	log.INFO.Printf("robotui %s", server.FormattedVersion())
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -251,7 +251,7 @@ func runRoot(cmd *cobra.Command, args []string) {
 	if err == nil {
 		httpd.RegisterSiteHandlers(site, cache)
 		httpd.RegisterShutdownHandler(func() {
-			log.FATAL.Println("evcc was stopped by user. OS should restart the service. Or restart manually.")
+			log.FATAL.Println("robotui was stopped by user. OS should restart the service. Or restart manually.")
 			once.Do(func() { close(stopC) }) // signal loop to end
 		})
 
@@ -283,7 +283,7 @@ func runRoot(cmd *cobra.Command, args []string) {
 		}()
 	} else {
 		httpd.RegisterShutdownHandler(func() {
-			log.FATAL.Println("evcc was stopped. OS should restart the service. Or restart manually.")
+			log.FATAL.Println("robotui was stopped. OS should restart the service. Or restart manually.")
 			once.Do(func() { close(stopC) }) // signal loop to end
 		})
 

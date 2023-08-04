@@ -3,8 +3,8 @@ package vehicle
 import (
 	"testing"
 
-	"github.com/evcc-io/evcc/util/templates"
-	"github.com/evcc-io/evcc/util/test"
+	"github.com/robotuimyhorobotuiotui/util/test"
+	"github.com/thommyho/robotui/util/templates"
 )
 
 var acceptable = []string{
@@ -21,7 +21,7 @@ var acceptable = []string{
 	"unexpected status: 401",
 	"missing credentials",    // Tesla
 	"missing credentials id", // Tronity
-	"missing access and/or refresh token, use `evcc token` to create", // Tesla
+	"missing access and/or refresh token, use `robotui token` to create", // Tesla
 }
 
 func TestTemplates(t *testing.T) {

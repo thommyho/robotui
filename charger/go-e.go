@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	goe "github.com/evcc-io/evcc/charger/go-e"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/sponsor"
+	goe "github.com/robotuimyhorobotuiotui/charger/go-e"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/sponsor"
+	"github.com/thommyho/robotui/api"
 )
 
 // https://go-e.co/app/api.pdf

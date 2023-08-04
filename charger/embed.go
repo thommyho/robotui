@@ -1,7 +1,7 @@
 package charger
 
 import (
-	"github.com/evcc-io/evcc/api"
+	"github.com/thommyho/robotui/api"
 )
 
 type embed struct {

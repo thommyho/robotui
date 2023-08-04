@@ -7,9 +7,9 @@ import (
 	"sort"
 	"text/tabwriter"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/provider/sma"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/provider/sma"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/api"
 	"gitlab.com/bboehmke/sunny"
 )
 

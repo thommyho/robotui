@@ -11,12 +11,12 @@ import (
 
 	"github.com/BurntSushi/toml"
 	"github.com/cloudfoundry/jibber_jabber"
-	"github.com/evcc-io/evcc/hems/semp"
-	"github.com/evcc-io/evcc/server"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/machine"
-	"github.com/evcc-io/evcc/util/templates"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
+	"github.com/robotuimyhorobotuiotui/server"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/machine"
+	"github.com/robotuimyhorobotuiotui/util/templates"
+	"github.com/thommyho/robotui/hems/semp"
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 	"golang.org/x/text/language"
@@ -47,7 +47,7 @@ func (c *CmdConfigure) Run(log *util.Logger, flagLang string, advancedMode, expa
 	c.advancedMode = advancedMode
 	c.expandedMode = expandedMode
 
-	c.log.INFO.Printf("evcc %s", server.FormattedVersion())
+	c.log.INFO.Printf("robotui %s", server.FormattedVersion())
 
 	bundle := i18n.NewBundle(language.German)
 	bundle.RegisterUnmarshalFunc("toml", toml.Unmarshal)
@@ -217,7 +217,7 @@ func (c *CmdConfigure) flowNewConfigFile() {
 
 		filename = c.askValue(question{
 			label:        c.localizedString("File_NewFilename"),
-			exampleValue: "evcc_neu.yaml",
+			exampleValue: "robotui_neu.yaml",
 			required:     true,
 		})
 	}

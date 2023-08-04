@@ -8,15 +8,15 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/evcc-io/evcc/server"
 	"github.com/pkg/browser"
 	"github.com/spf13/cobra"
+	"github.com/thommyho/robotui/server"
 )
 
 // discussCmd represents the discuss command
 var discussCmd = &cobra.Command{
 	Use:   "discuss",
-	Short: "Request support at Github Discussions (https://github.com/evcc-io/evcc/discussions/categories/erste-hilfe)",
+	Short: "Request support at Github Discussions (https://github.com/robotuimyhorobotuiotui/discussions/categories/erste-hilfe)",
 	Run:   runDiscuss,
 }
 
@@ -58,11 +58,11 @@ func runDiscuss(cmd *cobra.Command, args []string) {
 	})
 
 	body := out.String()
-	uri := "https://github.com/evcc-io/evcc/discussions/new?category=erste-hilfe&body=" + url.QueryEscape(body)
+	uri := "https://github.com/robotuimyhorobotuiotui/discussions/new?category=erste-hilfe&body=" + url.QueryEscape(body)
 
 	if err := browser.OpenURL(uri); err != nil {
 		log.FATAL.Println("Could not open browser.")
-		log.FATAL.Println("Go to https://github.com/evcc-io/evcc/discussions/new?category=erste-hilfe and post the following:")
+		log.FATAL.Println("Go to https://github.com/robotuimyhorobotuiotui/discussions/new?category=erste-hilfe and post the following:")
 		log.FATAL.Println(body)
 	}
 }

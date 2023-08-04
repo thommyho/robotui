@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/evcc-io/evcc/api"
 	"github.com/spf13/cobra"
+	"github.com/thommyho/robotui/api"
 )
 
 // chargerCmd represents the charger command

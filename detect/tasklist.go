@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/evcc-io/evcc/detect/tasks"
-	"github.com/evcc-io/evcc/util"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/thommyho/robotui/detect/tasks"
 )
 
 type TaskList struct {

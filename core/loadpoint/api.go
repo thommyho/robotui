@@ -3,10 +3,10 @@ package loadpoint
 import (
 	"time"
 
-	"github.com/evcc-io/evcc/api"
+	"github.com/thommyho/robotui/api"
 )
 
-//go:generate mockgen -package loadpoint -destination mock.go -mock_names API=MockAPI github.com/evcc-io/evcc/core/loadpoint API
+//go:generate mockgen -package loadpoint -destination mock.go -mock_names API=MockAPI github.com/robotuimyhorobotuiotui/core/loadpoint API
 
 // Controller gives access to loadpoint
 type Controller interface {

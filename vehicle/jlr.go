@@ -6,11 +6,11 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/evcc-io/evcc/api"
-	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/request"
-	"github.com/evcc-io/evcc/vehicle/jlr"
 	"github.com/google/uuid"
+	"github.com/robotuimyhorobotuiotui/util"
+	"github.com/robotuimyhorobotuiotui/util/request"
+	"github.com/robotuimyhorobotuiotui/vehicle/jlr"
+	"github.com/thommyho/robotui/api"
 )
 
 // https://github.com/ardevd/jlrpy
